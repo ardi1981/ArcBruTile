@@ -11,6 +11,7 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+1-7-2016: Added Thunderforest - Neighbourhood. Use 'Add Tms service -> Thunderforest -> Neighbourhood'
 
 12-06-2016: Added Sputnik map (Russian) (http://maps.sputnik.ru/). Use 'Add Tms service -> Sputnik'
 
