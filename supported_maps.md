@@ -52,7 +52,7 @@ Strava running and cycling heatmap [http://www.strava.com](http://www.strava.com
 
 Taobao: [https://map.taobao.com/](https://map.taobao.com/)
 
-Thunderforest: Landscape, OpenCycleMap, Outdoors, Spinal, Transport, Transport-dark. [http://www.thunderforest.com/](http://www.thunderforest.com/) 
+Thunderforest: Landscape, Neighbourhood, OpenCycleMap, Outdoors, Spinal, Transport, Transport-dark. [http://www.thunderforest.com/](http://www.thunderforest.com/) 
 
 Tianditu: Satellite and world vector map [http://www.tianditu.cn](http://www.tianditu.cn)
 
