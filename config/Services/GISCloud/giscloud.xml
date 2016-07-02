@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="GISCloud Map"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/map.xml" />
+    <TileMap
+      title="GISCloud Satellite"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/sat.xml" />
+    <TileMap
+      title="GISCloud Otok"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/otok.xml" />
+    <TileMap
+      title="GISCloud Ecw"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/ecw.xml" />
+    <TileMap
+      title="GISCloud Geotiff"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/geotiff.xml" />
+    <TileMap
+      title="GISCloud tiff"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/giscloud/tiff.xml" />
+  </TileMaps>
+</TileMapService>

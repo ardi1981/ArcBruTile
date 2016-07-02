@@ -1,0 +1,31 @@
+<TileMap version="1.0.0" tilemapservice="http://au.mapspast.org.nz/topo50">
+          <Title>S3 NIR 2013</Title>
+          <Abstract></Abstract>
+          <SRS>EPSG:2193</SRS>
+          <Origin x="-20037508.342789" y="-20037508.342789"/>
+          <TileFormat width="256" height="256" mime-type="image/png" extension="png" />
+          <BoundingBox minx="-20037508.342789" miny="-20037508.342789" maxx="20037508.342789" maxy="20037508.342789"/>
+          <TileSets>
+             <TileSet href="http://au.mapspast.org.nz/topo50/0" units-per-pixel="156543.033900000" order="0"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/1" units-per-pixel="78271.516950000" order="1"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/2" units-per-pixel="39135.758475000" order="2"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/3" units-per-pixel="19567.879237500" order="3"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/4" units-per-pixel="9783.939618750" order="4"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/5" units-per-pixel="4891.969809375" order="5"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/6" units-per-pixel="2445.984904688" order="6"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/7" units-per-pixel="1222.992452344" order="7"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/8" units-per-pixel="611.496226172" order="8"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/9" units-per-pixel="305.748113086" order="9"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/10" units-per-pixel="152.874056543" order="10"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/11" units-per-pixel="76.437028271" order="11"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/12" units-per-pixel="38.218514136" order="12"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/13" units-per-pixel="19.109257068" order="13"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/14" units-per-pixel="9.554628534" order="14"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/15" units-per-pixel="4.777314267" order="15"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/16" units-per-pixel="2.388657133" order="16"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/17" units-per-pixel="1.194328567" order="17"/>
+             <TileSet href="http://au.mapspast.org.nz/topo50/18" units-per-pixel="0.597164283" order="18"/>
+          </TileSets>
+</TileMap>
+
+

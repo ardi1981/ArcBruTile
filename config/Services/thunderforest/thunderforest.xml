@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Neighbourhood"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/neighbourhood.xml" />
+    <TileMap
+      title="OpenCycleMap"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/opencyclemap.xml" />
+    <TileMap
+      title="Transport"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/transport.xml" />
+    <TileMap
+      title="Transport Dark"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/transport-dark.xml" />
+    <TileMap
+      title="Landscape"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/landscape.xml" />
+    <TileMap
+      title="Outdoors"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/outdoors.xml" />
+    <TileMap
+      title="Spinal"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/spinal.xml" />
+
+
+  </TileMaps>
+</TileMapService>

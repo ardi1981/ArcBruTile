@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Richland NIR 2013"
+      srs="EPSG:3857"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Richland/nir_2013.xml"
+      overwriteurls="false"
+    />
+    <TileMap
+      title="NIR2"
+      srs="EPSG:3857"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Richland/nir2.xml"
+      overwriteurls="false"
+    />
+  </TileMaps>
+</TileMapService>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Rails"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openrailwaymap/rails.xml" />
+    <TileMap
+      title="Speed"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openrailwaymap/speed.xml" />
+    <TileMap
+      title="Signals"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openrailwaymap/signals.xml" />
+  </TileMaps>
+</TileMapService>

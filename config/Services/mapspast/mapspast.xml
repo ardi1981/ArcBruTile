@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Top50"
+      srs="EPSG:2193"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/mapspast/top50.xml" 
+      overwriteurls="false"/>
+  </TileMaps>
+</TileMapService>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="HOT"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/hot.xml" />
+    <TileMap
+      title="Hike and bike"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/hikebike.xml" />
+    <TileMap
+      title="OpenCycleMaps"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/opencyclemaps.xml" />
+    <TileMap
+      title="Landshade"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/landshade.xml" />
+    <TileMap
+      title="Hiking Trails"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/hikingtrails.xml" />
+    <TileMap
+      title="Mapnik BW"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/mapnikbw.xml" />
+    <TileMap
+      title="Transport"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/transport.xml" />
+    <TileMap
+      title="Public Transport"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/publictransport.xml" />
+    <TileMap
+      title="OSM French labels"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/osmfr.xml" />
+    <TileMap
+      title="Hydda"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/hydda.xml" />
+
+  </TileMaps>
+</TileMapService>

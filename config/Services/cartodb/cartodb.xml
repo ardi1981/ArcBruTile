@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Positron"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/positron.xml" />
+    <TileMap
+      title="Positron - No labels"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/positron_nolabels.xml" />
+    <TileMap
+      title="Darkmatter"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/darkmatter.xml" />
+    <TileMap
+      title="Darkmatter - No labels"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/darkmatter_nolabels.xml" />
+    <TileMap
+      title="Darkmatter - Only labels"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/darkmatter_onlylabels.xml" />
+
+  </TileMaps>
+</TileMapService>

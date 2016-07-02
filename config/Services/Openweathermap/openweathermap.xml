@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Clouds Classic"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/cloudsclassic.xml" />
+    <TileMap
+      title="Precipitation"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/precipitation.xml" />
+    <TileMap
+      title="Clouds"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/clouds.xml" />
+    <TileMap
+      title="Snow"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/snow.xml" />
+    <TileMap
+      title="Rain"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/rain.xml" />
+    <TileMap
+      title="Temperature"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/temp.xml" />
+    <TileMap
+      title="Wind"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/wind.xml" />
+    <TileMap
+      title="Precipitation Forecast"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/precipitation_forecast.xml"
+      auth="appid=44db6a862fba0b067b1930da0d769e98"
+    />
+    <TileMap
+      title="Pressure"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/pressure.xml"
+      auth="appid=44db6a862fba0b067b1930da0d769e98"
+    />
+    <TileMap
+      title="Clouds Forecast"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/clouds_forecast.xml"
+      auth="appid=44db6a862fba0b067b1930da0d769e98"
+    />
+  </TileMaps>
+</TileMapService>

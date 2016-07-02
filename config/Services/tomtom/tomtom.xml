@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="Streets"
+      srs="EPSG:900913"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/day.xml" 
+      overwriteurls="false"
+      type="InvertedTMS"
+      auth="key=x7es9779w29jcm3yhqgvwunf"
+   />
+    <TileMap
+      title="Night"
+      srs="EPSG:900913"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/night.xml" 
+      overwriteurls="false"
+      type="InvertedTMS"
+      auth="key=x7es9779w29jcm3yhqgvwunf"
+   />
+  </TileMaps>
+</TileMapService>

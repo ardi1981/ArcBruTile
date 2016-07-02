@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMapService version="1.0.0">
+  <Title></Title>
+  <Abstract></Abstract>
+  <TileMaps>
+    <TileMap
+      title="strava-cycle"
+      srs="EPSG:900913"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-cycle.xml" 
+      overwriteurls="false"
+      type="InvertedTMS"/>
+    <TileMap
+      title="strava-running"
+      srs="EPSG:900913"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-running.xml" 
+      overwriteurls="false"
+      type="InvertedTMS"/>
+    <TileMap
+      title="strava-taos"
+      srs="EPSG:900913"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-taos.xml" 
+      overwriteurls="false"
+      type="InvertedTMS"/>
+  </TileMaps>
+</TileMapService>
