@@ -12,6 +12,8 @@ Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile
 
 **News**
 
+1-7-2016: Added Thunderforest - Neighbourhood. Use 'Add Tms service -> Thunderforest -> Neighbourhood'
+
 12-06-2016: Added Sputnik map (Russian) (http://maps.sputnik.ru/). Use 'Add Tms service -> Sputnik'
 
 12-06-2016: Added IsHowChina map. Use 'Add Tms service -> IsHowChina' or available as menu option in ArcBruTile 0.8 release 
