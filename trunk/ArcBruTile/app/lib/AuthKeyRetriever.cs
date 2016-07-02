@@ -1,4 +1,5 @@
 ﻿
+using BrutileArcGIS.Lib;
 using System.Collections.Generic;
 using System.Net.Http;
 
@@ -12,7 +13,10 @@ namespace BrutileArcGIS.lib
         {
             if (!Keys.ContainsKey(provider))
             {
-                var url = $"https://dl.dropboxusercontent.com/u/9984329/ArcBruTile/keys/" + provider + "/key.txt";
+                var config = ConfigurationHelper.GetConfig();
+                var authProvider = config.AppSettings.Settings["authProvider"].Value;
+
+                var url = authProvider + provider + "/key.txt";
                 var httpClient = new HttpClient();
                 var key = httpClient.GetStringAsync(url).Result;
                 Keys.Add(provider,key);
