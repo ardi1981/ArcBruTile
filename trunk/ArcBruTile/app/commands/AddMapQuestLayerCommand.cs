@@ -8,7 +8,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddMapQuestOpenAerialMapLayerCommand : AddTmsLayerCommandBase
     {
         public AddMapQuestOpenAerialMapLayerCommand()
-            : base("BruTile", "&OpenAerialMap", "Add OpenAerialMap Layer", "MapQuest OpenAerialMap", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/MapQuest/OpenAerialMap.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&OpenAerialMap", "Add OpenAerialMap Layer", "MapQuest OpenAerialMap", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Mapquest/OpenAerialMap.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }
@@ -17,7 +17,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddMapQuestOSMLayerCommand : AddTmsLayerCommandBase
     {
         public AddMapQuestOSMLayerCommand()
-            : base("BruTile", "&OSM", "Add OSM Layer", "MapQuest OSM", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/MapQuest/OSM.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&OSM", "Add OSM Layer", "MapQuest OSM", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Mapquest/OSM.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }

@@ -8,7 +8,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddStamenWaterColorLayerCommand : AddTmsLayerCommandBase
     {
         public AddStamenWaterColorLayerCommand()
-            : base("BruTile", "&Watercolor", "Add Watercolor Layer", "Stamen WaterColor", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/Stamen/watercolor.xml",EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Watercolor", "Add Watercolor Layer", "Stamen WaterColor", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/watercolor.xml",EnumBruTileLayer.InvertedTMS)
         {
         }
     }
@@ -17,7 +17,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddStamenTonerLayerCommand : AddTmsLayerCommandBase
     {
         public AddStamenTonerLayerCommand()
-            : base("BruTile", "&Toner", "Add Toner Layer", "Stamen Toner", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/Stamen/toner.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Toner", "Add Toner Layer", "Stamen Toner", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/toner.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }
@@ -26,7 +26,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddStamenTerrainLayerCommand : AddTmsLayerCommandBase
     {
         public AddStamenTerrainLayerCommand()
-            : base("BruTile", "&Terrain", "Add Terrain Layer", "Stamen Terrain (USA)", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/Stamen/terrain.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Terrain", "Add Terrain Layer", "Stamen Terrain (USA)", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/terrain.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }

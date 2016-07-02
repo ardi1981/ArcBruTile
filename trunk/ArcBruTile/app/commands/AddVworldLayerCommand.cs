@@ -10,7 +10,7 @@ namespace BrutileArcGIS.commands
         public sealed class AddVWorldStreetLayerCommand  : AddTmsLayerCommandBase
         {
             public AddVWorldStreetLayerCommand()
-                : base("BruTile", "&Streets", "Add Street Layer", "VWorld Street", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/vworld/vworldstreet.xml", EnumBruTileLayer.InvertedTMS)
+                : base("BruTile", "&Streets", "Add Street Layer", "VWorld Street", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/vworldstreet.xml", EnumBruTileLayer.InvertedTMS)
             {
             }
         }
@@ -19,7 +19,7 @@ namespace BrutileArcGIS.commands
         public sealed class AddVWorldSatelliteLayerCommand : AddTmsLayerCommandBase
         {
             public AddVWorldSatelliteLayerCommand()
-                : base("BruTile", "&Satellite", "Add Satellite Layer", "VWorld Satelite", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/vworld/vworldsatellite.xml", EnumBruTileLayer.InvertedTMS)
+                : base("BruTile", "&Satellite", "Add Satellite Layer", "VWorld Satelite", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/vworldsatellite.xml", EnumBruTileLayer.InvertedTMS)
             {
             }
         }
@@ -28,7 +28,7 @@ namespace BrutileArcGIS.commands
         public sealed class AddVWorldHybridLayerCommand : AddTmsLayerCommandBase
         {
             public AddVWorldHybridLayerCommand()
-                : base("BruTile", "&Hybrid", "Add Hybrid Layer", "VWorld Hybrid", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/vworld/hybrid.xml", EnumBruTileLayer.InvertedTMS)
+                : base("BruTile", "&Hybrid", "Add Hybrid Layer", "VWorld Hybrid", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/hybrid.xml", EnumBruTileLayer.InvertedTMS)
             {
             }
         }

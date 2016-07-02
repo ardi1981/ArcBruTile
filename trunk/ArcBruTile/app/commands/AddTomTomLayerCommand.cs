@@ -8,7 +8,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddTomTomDayLayerCommand : AddTmsLayerCommandBase
     {
         public AddTomTomDayLayerCommand()
-            : base("BruTile", "&Day", "Add TomTom day Layer", "TomTom Day", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/tomtom/day.xml", EnumBruTileLayer.InvertedTMS, "tomtom")
+            : base("BruTile", "&Day", "Add TomTom day Layer", "TomTom Day", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/day.xml", EnumBruTileLayer.InvertedTMS, "tomtom")
         {
         }
     }
@@ -17,7 +17,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddTomTomNightLayerCommand : AddTmsLayerCommandBase
     {
         public AddTomTomNightLayerCommand()
-            : base("BruTile", "&Night", "Add TomTom night Layer", "TomTom Night", Resources.download, "http://dl.dropbox.com/u/9984329/ArcBruTile/Services/tomtom/night.xml", EnumBruTileLayer.InvertedTMS, "tomtom")
+            : base("BruTile", "&Night", "Add TomTom night Layer", "TomTom Night", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/night.xml", EnumBruTileLayer.InvertedTMS, "tomtom")
         {
         }
     }

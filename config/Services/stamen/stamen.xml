@@ -8,18 +8,18 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Stamen/terrain.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/terrain.xml" />
     <TileMap
       title="Stamen Toner"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Stamen/toner.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/toner.xml" />
     <TileMap
       title="Stamen Watercolor"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Stamen/watercolor.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/watercolor.xml" />
   </TileMaps>
 </TileMapService>
