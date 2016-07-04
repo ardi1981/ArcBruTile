@@ -1,28 +1,29 @@
-﻿using System.Collections.Generic;
-using BrutileArcGIS.Lib;
+﻿using BrutileArcGIS.Lib;
 using BruTile;
 using BruTile.Predefined;
 using BruTile.Web;
+using System.Collections.Generic;
 
 namespace BrutileArcGIS.lib
 {
-    public class YandexConfig : IConfig
+    public class TileLayerConfig : IConfig
     {
         private string _name;
         private string _url;
 
-        public YandexConfig(string name, string url)
+        public TileLayerConfig(string name, string url)
         {
             _name = name;
             _url = url;
         }
 
+        public List<string> Domains { get; set; }
+
         public ITileSource CreateTileSource()
         {
             var tileSchema = new GlobalSphericalMercator();
-            var servers = new List<string> { "01", "02", "03", "04" };
-            var yandexRequest = new BasicRequest(_url, servers);
-            var tileProvider = new WebTileProvider(yandexRequest);
+            var tileLayerRequest = new BasicRequest(_url, Domains);
+            var tileProvider = new WebTileProvider(tileLayerRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

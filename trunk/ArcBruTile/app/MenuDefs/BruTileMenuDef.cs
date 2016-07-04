@@ -1,5 +1,4 @@
-﻿using BrutileArcGIS.commands;
-using ESRI.ArcGIS.SystemUI;
+﻿using ESRI.ArcGIS.SystemUI;
 
 namespace BrutileArcGIS.MenuDefs
 {
@@ -19,23 +18,28 @@ namespace BrutileArcGIS.MenuDefs
                     itemDef.Group = false;
                     break;
                 case 1:
+                    itemDef.ID = "AddTileLayerCommand";
+                    itemDef.Group = false;
+                    break;
+                case 2:
                     itemDef.ID = "AddGisCloudMapCommand";
                     itemDef.Group = false;
                     break;
-                //case 2:
-                //    itemDef.ID = "VectorTileLayerCommand";
-                //    itemDef.Group = false;
-                //    break;
-                case 2:
+                case 3:
+                    itemDef.ID = "VectorTileLayerCommand";
+                    itemDef.Group = false;
+                    break;
+                case 4:
                     itemDef.ID = "AboutBruTileCommand";
                     itemDef.Group = true;
                     break;
+
             }
         }
 
         public int ItemCount
         {
-            get { return 3; }
+            get { return 5; }
         }
 
         public string Name

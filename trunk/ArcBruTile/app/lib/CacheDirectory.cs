@@ -71,6 +71,12 @@ namespace BrutileArcGIS.lib
                         url = ((YandexConfig)config).Url;
                         url = url.Replace("?", "");
                     }
+                    else if (config is TileLayerConfig)
+                    {
+                        url = ((TileLayerConfig)config).Url;
+                        url = url.Replace("?", "");
+                    }
+
 
                 }
 

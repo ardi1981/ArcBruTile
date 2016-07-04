@@ -1,10 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 using BrutileArcGIS.forms;
-using BrutileArcGIS.lib;
 using BrutileArcGIS.Lib;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
-using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Framework;
 
 namespace BrutileArcGIS.commands

@@ -242,6 +242,7 @@ namespace BrutileArcGIS.Lib
             }
 
             var url = _tileProvider.Request.GetUri(tileInfo);
+
             if (_auth != null)
             {
                 var uriBuilder = new UriBuilder(url) { Query = _auth };
@@ -260,12 +261,23 @@ namespace BrutileArcGIS.Lib
             doneEvent.SetOne();
         }
 
+        public static string ReplaceLastOccurrence(string Source, string Find, string Replace)
+        {
+            int place = Source.LastIndexOf(Find);
+
+            if (place == -1)
+                return Source;
+
+            string result = Source.Remove(place, Find.Length).Insert(place, Replace);
+            return result;
+        }
+
 
         private static void CreateRaster(TileInfo tile, string name)
         {
             var schema = _tileSource.Schema;
             var fi = new FileInfo(name);
-            var tfwFile = name.Replace(fi.Extension, "." + WorldFileWriter.GetWorldFile(schema.Format));
+            var tfwFile = ReplaceLastOccurrence(name, fi.Extension, "." + WorldFileWriter.GetWorldFile(schema.Format));
             WorldFileWriter.WriteWorldFile(tfwFile, tile.Extent, schema);
         }
 
