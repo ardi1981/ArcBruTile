@@ -60,11 +60,12 @@ namespace BrutileArcGIS.commands
                 // sample url: "https://tiles.shipmap.org/tiles/5/28/17.png";
                 //var url = "http://tiles.shipmap.org/tiles/{z}/{x}/{y}.png";
                 // var url = "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day.transit/{z}/{x}/{y}/512/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g";
-                // var url = "https://c.tile.thunderforest.com/cycle/{z}/{x}/{y}.png";
+                // var url = "https://[abc].tile.thunderforest.com/cycle/{z}/{x}/{y}.png";
+                // var url = "http://globalheat.strava.com/tiles/cycling/color3/{z}/{x}/{y}.png"
+                // var url = "http://[abc].tile.openstreetmap.org/{z}/{x}/{y}.png"
                 // var name = "shipmap";
 
                 var url = addTileServiceForm.Url;
-                var servers = addTileServiceForm.Domains;
                 var name = addTileServiceForm.Name;
 
                 var layerType = EnumBruTileLayer.InvertedTMS;
@@ -72,9 +73,14 @@ namespace BrutileArcGIS.commands
                 var map = mxdoc.FocusMap;
 
                 var tileLayerConfig = new TileLayerConfig(name, url);
-                if (url.Contains("{s}"))
+                if (url.Contains("[") && url.Contains("]"))
                 {
-                    var serverList = servers.Split(',').ToList();
+                    var start = url.IndexOf('[')+1;
+                    var end = url.IndexOf(']')-start;
+                    var substring = url.Substring(start, end);
+                    var serverList = substring.Select(c => c.ToString()).ToList();
+                    url = url.Replace("["+ substring + "]", "{s}");
+                    tileLayerConfig = new TileLayerConfig(name, url);
                     tileLayerConfig.Domains = serverList;
                 }
 
