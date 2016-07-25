@@ -73,7 +73,8 @@ Prerequisites: Visual Studio + ArcGIS Desktop 10.X is installed
 *   Press F5 and ArcMap will start in debug mode
  
 **Testimonials:**
-
+*   "Quite possibly the best thing since sliced bread for geo-geeks working in an ESRI environment" - (https://www.facebook.com/groups/CRAPGIS/permalink/955867361110256/)
+*   "ArcBruTile is a wonderful extensionfor ArcGIS" - (http://www.mapspast.org.nz/mapnews/0/?thread=ARCGIS%20Integration%20using%20ArcBruTile)
 *   "Great tool, saves me having to set up a local tile server. " - [mrsleepy](http://arcbrutile.codeplex.com/WorkItem/View.aspx?WorkItemId=5226)
 *   "surprisingly zippy" - [Mike Olkin](http://twitter.com/MikeOlkin/status/8206992508)
 *   "It works pretty well" - [Node Dangles weblog](http://nodedangles.wordpress.com/2010/09/09/arcbrutile)
