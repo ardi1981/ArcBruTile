@@ -11,6 +11,7 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+26-07-2016: Added New Zealand MapsPast maps (2009 Topo50, 1999 NZMS260, 1989 NZMS1/260, 1979 NZMS1, 1969 NZMS1, 1959 NZMS1, 1949 NZMS15, 1899 NZMS13) (http://www.mapspast.org.nz/).  Use 'Add Tms service -> NZ MapsPast' 
 
 1-7-2016: Added Thunderforest - Neighbourhood. Use 'Add Tms service -> Thunderforest -> Neighbourhood'
 
