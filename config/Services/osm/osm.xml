@@ -28,7 +28,7 @@
       profile="local"
       href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/landshade.xml" />
     <TileMap
-      title="Hiking Trails"
+      title="Biking Trails"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
