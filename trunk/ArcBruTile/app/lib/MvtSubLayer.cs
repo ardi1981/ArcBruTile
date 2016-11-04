@@ -16,9 +16,8 @@ using ESRI.ArcGIS.Framework;
 using ESRI.ArcGIS.Geometry;
 using GeoJSON.Net.Geometry;
 using log4net;
-using mapbox.vector.tile;
 using Feature = GeoJSON.Net.Feature.Feature;
-using System.Windows.Media;
+using Mapbox.Vector.Tile;
 
 namespace BrutileArcGIS.lib
 {
@@ -28,7 +27,7 @@ namespace BrutileArcGIS.lib
         private readonly IApplication _application;
         private HashSet<string> layerNames;
         private List<TileInfo> tileInfos;
-        private static Dictionary<TileInfo, List<LayerInfo>> tiles;
+        private static Dictionary<TileInfo, List<VectorTileLayer>> tiles;
         private static readonly log4net.ILog Logger = LogManager.GetLogger("ArcBruTileSystemLogger");
 
 
@@ -77,7 +76,7 @@ namespace BrutileArcGIS.lib
                     var activeView = map as IActiveView;
                     var tileInfosMeta = TileCalculator.GetTiles(activeView, _tileSource);
                     tileInfos = tileInfosMeta.Tiles;
-                    tiles = new Dictionary<TileInfo, List<LayerInfo>>();
+                    tiles = new Dictionary<TileInfo, List<VectorTileLayer>>();
 
                     Logger.Debug("Mapbox vector tile, number of tiles: " + tileInfos.Count);
                     Logger.Debug("Mapbox vector tile, start downloading...");
@@ -125,39 +124,39 @@ namespace BrutileArcGIS.lib
             {
                 var stream = new MemoryStream(bytes);
                 Logger.Debug("Start parsing vector tile...");
-                var layerInfos = VectorTileParser.Parse(stream, tileInfo.Index.Col, tileInfo.Index.Row, Int32.Parse(tileInfo.Index.Level));
+                var layerInfos = VectorTileParser.Parse(stream);
                 tiles[tileInfo] = layerInfos;
             }
             doneEvent.SetOne();
         }
 
-        private void DrawVectorTile(IDisplay display, KeyValuePair<TileInfo, List<LayerInfo>> tile)
+        private void DrawVectorTile(IDisplay display, KeyValuePair<TileInfo, List<VectorTileLayer>> tile)
         {
             Logger.Debug("End parsing vector tile...");
             Logger.Debug("Start drawing vector tile...");
-            DrawLayerInfos(display, tile.Value, SpatialReference);
+            DrawLayerInfos(display, tile, SpatialReference);
             Logger.Debug("End drawing vector tile...");
             Debug.WriteLine("col:" + tile.Key.Index.Col + ", " + "row:" + tile.Key.Index.Row + ", level: " + tile.Key.Index.Level);
 
         }
 
-        private void DrawLayerInfos(IDisplay display, List<LayerInfo> layerInfos, ISpatialReference sr)
+        private void DrawLayerInfos(IDisplay display, KeyValuePair<TileInfo, List<VectorTileLayer>> tile, ISpatialReference sr)
         {
-            foreach (var layerInfo in layerInfos)
+            foreach (var layerInfo in tile.Value)
             {
-                //  var t = layerInfo.FeatureCollection.Features[0].Geometry.Type;
-                var fcount = layerInfo.FeatureCollection.Features.Count;
+                var layer = layerInfo.ToGeoJSON(tile.Key.Index.Col, tile.Key.Index.Row, Int32.Parse(tile.Key.Index.Level));
+                var fcount = layer.Features.Count;
                 if (fcount > 0)
                 {
-                    DrawFeatures(layerInfo.Name, display, layerInfo.FeatureCollection.Features, sr);
+                    DrawFeatures(layerInfo.Name, display, layer.Features, sr);
                 }
             }
         }
 
         private void DrawFeatures(string layerName, IDisplay display, IEnumerable<Feature> features, ISpatialReference sr)
         {
-            if (layerName == "water")
-            {
+            //if (layerName == "water")
+            //{
                 foreach (var feature in features)
                 {
                     layerNames.Add(feature.Geometry.Type + ":" + layerName);
@@ -172,7 +171,7 @@ namespace BrutileArcGIS.lib
                     {
                         display.SetSymbol((ISymbol)GetDrawingLineSymbol());
                         var line = (LineString)geom;
-                        //DrawLine(display, line, sr);
+                        DrawLine(display, line, sr);
                     }
                     else if (geom is GeoJSON.Net.Geometry.Point)
                     {
@@ -182,7 +181,7 @@ namespace BrutileArcGIS.lib
                         DrawPoint(display, gp.Longitude, gp.Latitude, sr);
                     }
                 }
-            }
+            //}
         }
 
         private void DrawPoint(IDisplay display, double Longitude, double Latitude, ISpatialReference sr)
