@@ -14,7 +14,7 @@ OpenWeatherMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/c
 OpenStreetMap,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/osm.xml,1.0.0,
 Olleh,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/olleh/olleh.xml,1.0.0,
 OSM2Vectortiles, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm2vectortiles/osm2vectortiles.xml,1.0.0,
-Stamen,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/Stamen.xml,1.0.0,
+Stamen,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/stamen.xml,1.0.0,
 TomTom,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/tomtom.xml,1.0.0,
 Richland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Richland/Richland.xml,1.0.0,
 Sputnik,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/sputnik/sputnik.xml,1.0.0
