@@ -16,6 +16,12 @@
       profile="local"
       href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/toner.xml" />
     <TileMap
+      title="Stamen Toner Lines"
+      srs="EPSG:4326"
+      type="InvertedTMS"
+      profile="local"
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/toner-lines.xml" />
+    <TileMap
       title="Stamen Watercolor"
       srs="EPSG:4326"
       type="InvertedTMS"
