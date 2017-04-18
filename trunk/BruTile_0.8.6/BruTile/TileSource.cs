@@ -35,18 +35,6 @@ namespace BruTile
                     return new TileSource(
                         new WebTileProvider(new BasicRequest("http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png", new[] { "a", "b", "c" })),
                         new GlobalSphericalMercator(0, 20));
-                case KnownTileServers.MapQuest:
-                    return new TileSource(
-                        new WebTileProvider(new BasicRequest("http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", new[] { "1", "2", "3", "4" })),
-                        new GlobalSphericalMercator());
-                case KnownTileServers.MapQuestAerial:
-                    return new TileSource(
-                        new WebTileProvider(new BasicRequest("http://mtile0{s}.mqcdn.com/tiles/1.0.0/vx/sat/{z}/{x}/{y}.png", new[] { "1", "2", "3", "4" }, apiKey)),
-                        new GlobalSphericalMercator(0, 13));
-                case KnownTileServers.MapQuestRoadsAndLabels:
-                    return new TileSource(
-                        new WebTileProvider(new BasicRequest("http://mtile0{s}.mqcdn.com/tiles/1.0.0/vx/hyb/{z}/{x}/{y}.png", new[] { "1", "2", "3", "4" }, apiKey)),
-                        new GlobalSphericalMercator(2));
                 case KnownTileServers.BingRoads:
                     return new TileSource(
                         new WebTileProvider(new BingRequest("http://t{s}.tiles.virtualearth.net/tiles/r{quadkey}.jpeg?g={apiversion}&token={userkey}", apiKey)),

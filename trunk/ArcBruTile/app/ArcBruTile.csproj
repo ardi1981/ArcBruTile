@@ -268,7 +268,6 @@
     <Compile Include="commands\AddBingLayerCommand.cs" />
     <Compile Include="commands\AddBruTileLayerCommandBase.cs" />
     <Compile Include="commands\AddMapBoxLayerCommand.cs" />
-    <Compile Include="commands\AddMapQuestLayerCommand.cs" />
     <Compile Include="commands\AddServicesCommand.cs" />
     <Compile Include="commands\AddOsmLayerCommand.cs" />
     <Compile Include="commands\AddStamenLayerCommand.cs" />
@@ -276,7 +275,6 @@
     <Compile Include="commands\AddWmsCLayerCommand.cs" />
     <Compile Include="MenuDefs\BingMenuDef.cs" />
     <Compile Include="MenuDefs\MapBoxMenuDef.cs" />
-    <Compile Include="MenuDefs\MapQuestMenuDef.cs" />
     <Compile Include="MenuDefs\OsmMenuDef.cs" />
     <Compile Include="MenuDefs\StamenMenuDef.cs" />
     <Compile Include="forms\AddServicesForm.cs">
