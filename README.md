@@ -52,7 +52,7 @@ See [supported_maps.md](supported_maps.md)
 
 *   all projections;
 *   client side caching;
-*   ArcGIS 10.0, 10.1, 10.2, 10.3, 10.4;
+*   ArcGIS 10.0, 10.1, 10.2, 10.3, 10.4, 10.5;
 *   Printing; 
 *   MapTiler support (see [ArcBruTile and MapTiler](wikipage?title=ArcBruTile%20and%20MapTiler) for details).
 
