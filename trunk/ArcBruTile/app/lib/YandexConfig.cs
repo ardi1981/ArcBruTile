@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using BrutileArcGIS.Lib;
 using BruTile;
-using BruTile.Predefined;
 using BruTile.Web;
 
 namespace BrutileArcGIS.lib
@@ -19,7 +18,7 @@ namespace BrutileArcGIS.lib
 
         public ITileSource CreateTileSource()
         {
-            var tileSchema = new GlobalSphericalMercator();
+            var tileSchema = new YandexSchema();
             var servers = new List<string> { "01", "02", "03", "04" };
             var yandexRequest = new BasicRequest(_url, servers);
             var tileProvider = new WebTileProvider(yandexRequest);
