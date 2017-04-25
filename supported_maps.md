@@ -28,8 +28,6 @@ National Library of Scotland (NLS): Historical Maps of Great Britain 
 
 Naver: Streets, Satellite, Hybrid and Cadastral [http://map.naver.com/](http://map.naver.com/)
 
-New York City Maps: Basemap and aerial maps (1924 - 2016) (http://maps.nyc.gov/doitt/nycitymap/)
-
 Nokia: Streets, Satellite, Hybrid, Terrain, Traffic, Transit [https://maps.here.com](https://maps.here.com)
 
 NZ MapsPast: 2009 Topo50, 1999 NZMS260, 1989 NZMS1/260, 1979 NZMS1, 1969 NZMS1, 1959 NZMS1, 1949 NZMS15, 1899 NZMS13 (http://www.mapspast.org.nz/)
