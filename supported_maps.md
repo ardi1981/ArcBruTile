@@ -22,13 +22,13 @@ Kosmosnimki: Streets [http://www.kosmosnimki.ru/](http://www.kosmosnimki.ru/)
 
 MapBox: Streets, Light, Dark, Satellite, Streets - Satellite, Wheatpaste, Streets - basic, Comic, Outdoors, Run - bike - hike, Pencil, Pirates, Emerald and High - Contrast  [http://mapbox.com/maps/](http://mapbox.com/maps/)
 
-MapQuest: OpenAerialMap, OSM [http://www.mapquest.com/](http://www.mapquest.com/)
-
 Nationaal Georegister (PDOK): AAN, BGT (standaard, lijngericht, achtergrond en omtrekgericht), AHN2, AHN3, BAG, BRT (normaal, grijs, pastel), Kadastrale kaart, Top10 vector, Top50 vector, Top25 raster, Top50 raster and Top250 raster. [https://www.pdok.nl/](https://www.pdok.nl/)
 
 National Library of Scotland (NLS): Historical Maps of Great Britain 
 
 Naver: Streets, Satellite, Hybrid and Cadastral [http://map.naver.com/](http://map.naver.com/)
+
+New York City Maps: Basemap and aerial maps (1924 - 2016) (http://maps.nyc.gov/doitt/nycitymap/)
 
 Nokia: Streets, Satellite, Hybrid, Terrain, Traffic, Transit [https://maps.here.com](https://maps.here.com)
 
