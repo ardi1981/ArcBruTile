@@ -8,6 +8,7 @@ MapBox,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Ser
 MapQuest,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Mapquest/MapQuest.xml,1.0.0,
 National Library of Scotland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/nls/nls.xml,1.0.0,
 NZ MapsPast,http://au.mapspast.org.nz/arcBruTile/mapspast.xml,1.0.0,
+New York City Maps, https://maps.nyc.gov/tms/1.0.0/,
 OpenRailwayMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/OpenRailwayMap/openrailwaymap.xml,1.0.0,
 OpenSeaMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openseamap/openseamap.xml,1.0.0,
 OpenWeatherMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/openweathermap.xml,1.0.0,
