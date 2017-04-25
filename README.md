@@ -10,8 +10,6 @@ Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile
 
 **News**
 
-25-04-2017: Added New York City Maps
-
 18-04-2017: Removed MapQuest because change in their offering (https://devblog.mapquest.com/2016/06/15/modernization-of-mapquest-results-in-changes-to-open-tile-access/). Effective in next release 0.9
 
 18-04-2017: ArcBruTile 0.8 release. Please note older versions of ArcBruTile do not function well because of a breaking changes in DropBox functionalty. 
