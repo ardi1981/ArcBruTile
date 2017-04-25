@@ -117,7 +117,7 @@
             this.linkLabel1.Size = new System.Drawing.Size(193, 17);
             this.linkLabel1.TabIndex = 18;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "http://arcbrutile.codeplex.com";
+            this.linkLabel1.Text = "http://www.github.com/arcbrutile/arcbrutile";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label2
