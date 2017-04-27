@@ -18,6 +18,8 @@ using GeoJSON.Net.Geometry;
 using log4net;
 using Feature = GeoJSON.Net.Feature.Feature;
 using Mapbox.Vector.Tile;
+using System.Net.Http;
+using System.Net;
 
 namespace BrutileArcGIS.lib
 {
@@ -118,8 +120,14 @@ namespace BrutileArcGIS.lib
             var tileInfo = (TileInfo)parameters[0];
             var doneEvent = (MultipleThreadResetEvent)parameters[1];
             var url = ((WebTileProvider)_tileSource.Provider).Request.GetUri(tileInfo);
-            var request = new GZipWebClient();
-            var bytes = request.DownloadData(url);
+            // todo: 
+            var handler = new HttpClientHandler()
+            {
+                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+            };
+
+            var httpClient = new HttpClient(handler);
+            var bytes = httpClient.GetAsync(url).Result.Content.ReadAsByteArrayAsync().Result;
             if (bytes != null)
             {
                 var stream = new MemoryStream(bytes);

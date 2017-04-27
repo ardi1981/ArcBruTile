@@ -109,17 +109,14 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="GeoJSON.Net, Version=0.1.47.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GeoJSON.Net.0.1.47\lib\portable-net40+sl5+wp80+win8+wpa81\GeoJSON.Net.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="GeoJSON.Net, Version=0.1.55.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GeoJSON.Net.0.1.56\lib\portable-net40+sl5+wp80+win8+wpa81\GeoJSON.Net.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.Vector.Tile, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\mapbox-vector-tile.3.1.1\lib\Mapbox.Vector.Tile.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\mapbox-vector-tile.3.1.4\lib\portable-net4+sl5+wp8+win8\Mapbox.Vector.Tile.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ExceptionMessageBox, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -133,9 +130,6 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="protobuf-net">
       <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
-    </Reference>
-    <Reference Include="SmartThreadPool">
-      <HintPath>..\packages\SmartThreadPool.dll.2.2.3\lib\SmartThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -219,15 +213,11 @@
     <Compile Include="lib\BaiduConfig.cs" />
     <Compile Include="lib\BaiduTileSchema.cs" />
     <Compile Include="lib\BaseGroupLayer.cs" />
-    <Compile Include="lib\BruTileCustomLayer.cs" />
     <Compile Include="lib\ConfigGisCloud.cs" />
     <Compile Include="lib\DaumRequest.cs" />
     <Compile Include="lib\GisCloudApiRetriever.cs" />
     <Compile Include="lib\GISCloudLayer.cs" />
     <Compile Include="lib\GisCloudUtil.cs" />
-    <Compile Include="lib\GZipWebClient.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="lib\ImageDrawer.cs" />
     <Compile Include="lib\ImageProcessor.cs" />
     <Compile Include="lib\MapBoxVectorTileSource.cs" />
@@ -238,7 +228,6 @@
     <Compile Include="lib\DaumTileSchema.cs" />
     <Compile Include="lib\NokiaConfig.cs" />
     <Compile Include="lib\Requester.cs" />
-    <Compile Include="lib\SimpleFileFetcher.cs" />
     <Compile Include="lib\TileCalculator.cs" />
     <Compile Include="lib\WorldToScreen.cs" />
     <Compile Include="lib\YandexConfig.cs" />
@@ -273,7 +262,6 @@
     <Compile Include="commands\AddOsmLayerCommand.cs" />
     <Compile Include="commands\AddStamenLayerCommand.cs" />
     <Compile Include="commands\AddTmsLayerCommandBase.cs" />
-    <Compile Include="commands\AddWmsCLayerCommand.cs" />
     <Compile Include="MenuDefs\BingMenuDef.cs" />
     <Compile Include="MenuDefs\MapBoxMenuDef.cs" />
     <Compile Include="MenuDefs\OsmMenuDef.cs" />
@@ -290,12 +278,6 @@
     <Compile Include="forms\AddProviderForm.Designer.cs">
       <DependentUpon>AddProviderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\AddWmsCForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\AddWmsCForm.Designer.cs">
-      <DependentUpon>AddWmsCForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="lib\ArcMapWindow.cs" />
     <Compile Include="lib\BruTileHelper.cs" />
     <Compile Include="lib\BruTileLayer.cs" />
@@ -304,7 +286,6 @@
     <Compile Include="lib\ConfigBingHybrid.cs" />
     <Compile Include="lib\ConfigInvertedTMS.cs" />
     <Compile Include="lib\ConfigTms.cs" />
-    <Compile Include="lib\ConfigWmsC.cs" />
     <Compile Include="lib\EnvelopeExtensionMethods.cs" />
     <Compile Include="lib\FetchStrategy.cs" />
     <Compile Include="lib\FileCacheExtensionMethods.cs" />
@@ -362,10 +343,6 @@
       <DependentUpon>AddProviderForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\AddWmsCForm.resx">
-      <DependentUpon>AddWmsCForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -387,10 +364,6 @@
   <ItemGroup>
     <Content Include="Resources\download.png" />
     <Content Include="Resources\tms.jpg" />
-    <Content Include="services\arcbrutile_sample_services.xml">
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\WMS_icon.png" />
     <Content Include="App.config">
       <SubType>Designer</SubType>
