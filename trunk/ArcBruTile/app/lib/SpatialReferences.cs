@@ -15,7 +15,7 @@ namespace BrutileArcGIS.Lib
             int code = int.Parse(epsgCode.Substring(start, end-start));
 
             // Handle non official EPSG codes...
-            if (code == 900913 | code==41001 ) code = 102113;
+            if (code == 900913 | code==41001 | code== 102113 | code == 3785) code = 3857;
 
             if(IsProjectedSpatialReference(code))
             {
