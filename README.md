@@ -10,9 +10,9 @@ Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile
 
 **News**
 
-01-05-2017: Article about ArcBrUtile in issue 44 of WAURISA's The Summit, see (http://www.waurisa.org/thesummit/TheSummit_Issue44.pdf), page 16
+01-05-2017: Article about ArcBrUtile in issue 44 of WAURISA's The Summit, see http://www.waurisa.org/thesummit/TheSummit_Issue44.pdf, page 16
 
-18-04-2017: Removed MapQuest because change in their offering (https://devblog.mapquest.com/2016/06/15/modernization-of-mapquest-results-in-changes-to-open-tile-access/). Effective in next release 0.9
+18-04-2017: Removed MapQuest because change in their offering https://devblog.mapquest.com/2016/06/15/modernization-of-mapquest-results-in-changes-to-open-tile-access/. Effective in next release 0.9
 
 18-04-2017: ArcBruTile 0.8 release. Please note older versions of ArcBruTile do not function well because of a breaking changes in DropBox functionalty. 
 
