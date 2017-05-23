@@ -30,6 +30,8 @@ Naver: Streets, Satellite, Hybrid and Cadastral [http://map.naver.com/](http://
 
 Nokia: Streets, Satellite, Hybrid, Terrain, Traffic, Transit [https://maps.here.com](https://maps.here.com)
 
+New York City Maps: Basemap and aerial maps (1924 - 2016) (http://maps.nyc.gov/doitt/nycitymap/)
+
 NZ MapsPast: 2009 Topo50, 1999 NZMS260, 1989 NZMS1/260, 1979 NZMS1, 1969 NZMS1, 1959 NZMS1, 1949 NZMS15, 1899 NZMS13 (http://www.mapspast.org.nz/)
 
 OpenRailwayMap: Rail, Speed and Signals [http://www.openrailwaymap.org/](http://www.openrailwaymap.org/)
