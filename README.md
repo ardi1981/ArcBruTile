@@ -1,5 +1,5 @@
 
-# 16/9/2017: Download ArcBruTile 0.9 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for $9.99.
+# 16/9/2017: Download ArcBruTile 0.9 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 9.99 €EUR.
 
 **Project Description**  
 
