@@ -8,7 +8,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddCartoDBDarkmatterLayerCommand : AddTmsLayerCommandBase
     {
         public AddCartoDBDarkmatterLayerCommand()
-            : base("BruTile", "&Darkmatter", "Add CartoDB Darkmatter Layer", "CartoDB Darkmatter", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/darkmatter.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Darkmatter", "Add CartoDB Darkmatter Layer", "CartoDB Darkmatter", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/cartodb/darkmatter.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }
@@ -17,7 +17,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddCartoDBPositronLayerCommand : AddTmsLayerCommandBase
     {
         public AddCartoDBPositronLayerCommand()
-            : base("BruTile", "&Positron", "Add CartoDB Positron Layer", "Positron", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/positron.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Positron", "Add CartoDB Positron Layer", "Positron", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/cartodb/positron.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }
