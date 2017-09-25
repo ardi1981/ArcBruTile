@@ -8,6 +8,6 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/nls/historicalmaps.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/nls/historicalmaps.xml" />
   </TileMaps>
 </TileMapService>

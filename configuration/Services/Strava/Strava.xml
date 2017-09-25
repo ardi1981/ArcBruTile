@@ -7,21 +7,21 @@
       title="strava-cycle"
       srs="EPSG:900913"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-cycle.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-cycle.xml" 
       overwriteurls="false"
       type="InvertedTMS"/>
     <TileMap
       title="strava-running"
       srs="EPSG:900913"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-running.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-running.xml" 
       overwriteurls="false"
       type="InvertedTMS"/>
     <TileMap
       title="strava-taos"
       srs="EPSG:900913"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/strava-taos.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-taos.xml" 
       overwriteurls="false"
       type="InvertedTMS"/>
   </TileMaps>

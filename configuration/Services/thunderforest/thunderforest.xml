@@ -8,43 +8,43 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/neighbourhood.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/neighbourhood.xml" />
     <TileMap
       title="OpenCycleMap"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/opencyclemap.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/opencyclemap.xml" />
     <TileMap
       title="Transport"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/transport.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/transport.xml" />
     <TileMap
       title="Transport Dark"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/transport-dark.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/transport-dark.xml" />
     <TileMap
       title="Landscape"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/landscape.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/landscape.xml" />
     <TileMap
       title="Outdoors"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/outdoors.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/outdoors.xml" />
     <TileMap
       title="Spinal"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/spinal.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/spinal.xml" />
 
 
   </TileMaps>

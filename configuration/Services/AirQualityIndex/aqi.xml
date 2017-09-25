@@ -8,42 +8,42 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-aqi.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-aqi.xml" />
     <TileMap
       title="usepa-pm25"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-pm25.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-pm25.xml" />
     <TileMap
       title="usepa-o3"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-o3.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-o3.xml" />
     <TileMap
       title="usepa-no2"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-no2.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-no2.xml" />
     <TileMap
       title="usepa-so2"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-so2.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-so2.xml" />
     <TileMap
       title="usepa-co"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/usepa-co.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/usepa-co.xml" />
     <TileMap
       title="asean-pm10"
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/asean-pm10.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/asean-pm10.xml" />
   </TileMaps>
 </TileMapService>

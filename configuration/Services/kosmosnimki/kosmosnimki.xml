@@ -7,7 +7,7 @@
       title="Streets"
       srs="EPSG:900913"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/kosmosnimki/streets.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/kosmosnimki/streets.xml" 
       overwriteurls="false"
       type="InvertedTMS"/>
   </TileMaps>

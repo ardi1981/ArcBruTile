@@ -7,7 +7,7 @@
       title="Top50"
       srs="EPSG:2193"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/mapspast/top50.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/mapspast/top50.xml" 
       overwriteurls="false"/>
   </TileMaps>
 </TileMapService>

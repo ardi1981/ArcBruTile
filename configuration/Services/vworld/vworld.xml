@@ -8,18 +8,18 @@
       srs="EPSG:4326"
       profile="local"
       type="InvertedTMS"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/vworldsatellite.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/vworld/vworldsatellite.xml" />
     <TileMap
       title="VWorld Street (Korea)"
       srs="EPSG:4326"
       profile="local"
       type="InvertedTMS"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/vworldstreet.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/vworld/vworldstreet.xml" />
     <TileMap
       title="VWorld Hybrid (Korea)"
       srs="EPSG:4326"
       profile="local"
       type="InvertedTMS"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/hybrid.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/vworld/hybrid.xml" />
   </TileMaps>
 </TileMapService>

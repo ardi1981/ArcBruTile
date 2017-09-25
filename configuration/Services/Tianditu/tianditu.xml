@@ -8,6 +8,6 @@
       srs="EPSG:4326"
       profile="local"
       type="InvertedTMS"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tianditu/tianditumaps.xml" />
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/tianditu/tianditumaps.xml" />
   </TileMaps>
 </TileMapService>

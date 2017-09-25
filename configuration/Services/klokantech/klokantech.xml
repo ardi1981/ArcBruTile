@@ -8,7 +8,7 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/klokantech/bright.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/klokantech/bright.xml" 
       auth="key=WQ5sRntXphOrWgesmtmU"
     />
     <TileMap
@@ -16,7 +16,7 @@
       srs="EPSG:4326"
       type="InvertedTMS"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/klokantech/retro.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/klokantech/retro.xml" 
       auth="key=WQ5sRntXphOrWgesmtmU"
     />
   </TileMaps>

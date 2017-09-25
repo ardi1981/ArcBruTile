@@ -7,7 +7,7 @@
       title="Satellite"
       srs="EPSG:900913"
       profile="local"
-      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/sogou/streets.xml" 
+      href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/sogou/streets.xml" 
       overwriteurls="false"
       type="InvertedTMS"/>
   </TileMaps>

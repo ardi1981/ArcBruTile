@@ -1,26 +1,26 @@
-Air Quality Index,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/AirQualityIndex/aqi.xml,1.0.0
-CartoDB,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/cartodb/cartodb.xml,1.0.0
-IsHowChina, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/ishowchina/ishowchina.xml,1.0.0
-Klokan Technologies,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/klokantech/klokantech.xml,1.0.0,
-Kosmosnimki,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/kosmosnimki/kosmosnimki.xml,1.0.0,
+Air Quality Index,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/AirQualityIndex/aqi.xml,1.0.0
+CartoDB,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/cartodb/cartodb.xml,1.0.0
+IsHowChina, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/ishowchina/ishowchina.xml,1.0.0
+Klokan Technologies,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/klokantech/klokantech.xml,1.0.0,
+Kosmosnimki,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/kosmosnimki/kosmosnimki.xml,1.0.0,
 Nationaal Georegister (Dutch),http://geodata.nationaalgeoregister.nl/tms/1.0.0,1.0.0,
-MapBox,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Mapbox/Mapbox.xml,1.0.0,
-MapQuest,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Mapquest/MapQuest.xml,1.0.0,
-National Library of Scotland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/nls/nls.xml,1.0.0,
+MapBox,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Mapbox/Mapbox.xml,1.0.0,
+MapQuest,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Mapquest/MapQuest.xml,1.0.0,
+National Library of Scotland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/nls/nls.xml,1.0.0,
 New York City Maps, https://maps.nyc.gov/tms/1.0.0/,
 NZ MapsPast,http://au.mapspast.org.nz/arcBruTile/mapspast.xml,1.0.0,
-OpenRailwayMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/OpenRailwayMap/openrailwaymap.xml,1.0.0,
-OpenSeaMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openseamap/openseamap.xml,1.0.0,
-OpenWeatherMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Openweathermap/openweathermap.xml,1.0.0,
-OpenStreetMap,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm/osm.xml,1.0.0,
-Olleh,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/olleh/olleh.xml,1.0.0,
-OSM2Vectortiles, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/osm2vectortiles/osm2vectortiles.xml,1.0.0,
-Stamen,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/stamen/stamen.xml,1.0.0,
-TomTom,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tomtom/tomtom.xml,1.0.0,
-Richland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Richland/richland.xml,1.0.0,
-Sputnik,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/sputnik/sputnik.xml,1.0.0
-Strava,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/Strava/Strava.xml,1.0.0
-Tianditu,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/tianditu/tianditu.xml,1.0.0
-ThunderForest,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/thunderforest/thunderforest.xml,1.0.0
+OpenRailwayMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/OpenRailwayMap/openrailwaymap.xml,1.0.0,
+OpenSeaMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Openseamap/openseamap.xml,1.0.0,
+OpenWeatherMap, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Openweathermap/openweathermap.xml,1.0.0,
+OpenStreetMap,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/osm/osm.xml,1.0.0,
+Olleh,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/olleh/olleh.xml,1.0.0,
+OSM2Vectortiles, https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/osm2vectortiles/osm2vectortiles.xml,1.0.0,
+Stamen,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/stamen/stamen.xml,1.0.0,
+TomTom,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/tomtom/tomtom.xml,1.0.0,
+Richland,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Richland/richland.xml,1.0.0,
+Sputnik,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/sputnik/sputnik.xml,1.0.0
+Strava,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/Strava.xml,1.0.0
+Tianditu,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/tianditu/tianditu.xml,1.0.0
+ThunderForest,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/thunderforest/thunderforest.xml,1.0.0
 U.S. National Park Service,http://www.nps.gov/npmap/arcbrutile/tilesets.xml,1.0.0
-VWorld,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/config/Services/vworld/vworld.xml,1.0.0
+VWorld,https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/vworld/vworld.xml,1.0.0
