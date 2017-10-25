@@ -45,7 +45,5 @@
              units-per-pixel="0.00000536441802978516" order="17" />
     <TileSet href="https://s3.amazonaws.com/strava.heatmaps/taos/ride/tiles/18"
              units-per-pixel="0.00000268220901489258" order="18" />
-    <TileSet href="https://s3.amazonaws.com/strava.heatmaps/taos/ride/tiles/19"
-             units-per-pixel="0.00000134110450744629" order="19" />
   </TileSets>
 </TileMap>
