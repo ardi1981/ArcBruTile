@@ -10,7 +10,7 @@ namespace BrutileArcGIS.MenuDefs
             m_barCaption = "&Strava";
             AddItem(typeof(AddStravaCyclingLayerCommand));
             AddItem(typeof(AddStravaRunningLayerCommand));
-
+            AddItem(typeof(AddStravaBothLayerCommand));
         }
     }
 }
