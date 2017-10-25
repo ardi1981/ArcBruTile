@@ -18,7 +18,7 @@
       overwriteurls="false"
       type="InvertedTMS"/>
     <TileMap
-      title="strava-taos"
+      title="strava-both"
       srs="EPSG:900913"
       profile="local"
       href="https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-both.xml" 
