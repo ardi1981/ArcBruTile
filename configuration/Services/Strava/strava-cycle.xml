@@ -45,7 +45,5 @@
              units-per-pixel="0.00000536441802978516" order="17" />
     <TileSet href="http://globalheat.strava.com/tiles/cycling/color3/18"
              units-per-pixel="0.00000268220901489258" order="18" />
-    <TileSet href="http://globalheat.strava.com/tiles/cycling/color3/19"
-             units-per-pixel="0.00000134110450744629" order="19" />
   </TileSets>
 </TileMap>
