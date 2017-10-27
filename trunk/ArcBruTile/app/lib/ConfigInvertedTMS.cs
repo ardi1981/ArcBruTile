@@ -3,6 +3,7 @@ using System.Net;
 using BruTile;
 using BruTile.Predefined;
 using BruTile.Tms;
+using System.Collections.Generic;
 
 namespace BrutileArcGIS.Lib
 {
@@ -12,8 +13,7 @@ namespace BrutileArcGIS.Lib
 
         public ConfigInvertedTMS(string url)
         {
-            if (url == null) throw new ArgumentNullException("url");
-            _url = url;
+            _url = url ?? throw new ArgumentNullException("url");
         }
 
         public ITileSource CreateTileSource()
@@ -23,8 +23,26 @@ namespace BrutileArcGIS.Lib
             var response = (HttpWebResponse)request.GetResponse();
             var stream = response.GetResponseStream();
             var tileSource = TileMapParser.CreateTileSource(stream);
-            return new TileSource(tileSource.Provider, new SphericalMercatorInvertedWorldSchema());
+            var s = new SphericalMercatorInvertedWorldSchema();
+
+            // now remove all resolutions that are not in the Tilesource.
+            // For example Strava level 18 we must not draw.
+            var l = new List<String>();
+            foreach(var res in s.Resolutions)
+            {
+                var r = tileSource.Schema.Resolutions.ContainsKey(res.Key);
+                if (!r){
+                    l.Add(res.Key);
+                }
+            }
+            foreach(var p in l)
+            {
+                s.Resolutions.Remove(p);
+            }
+
+            return new TileSource(tileSource.Provider, s);
         }
+
 
         public string Url
         {

@@ -10,8 +10,7 @@ namespace BrutileArcGIS.lib
     {
         public ConfigGisCloud(string url, int layerId, string format)
         {
-            if (url == null) throw new ArgumentNullException("url");
-            Url = url;
+            Url = url ?? throw new ArgumentNullException("url");
             LayerId =layerId;
             Format = format;
         }
