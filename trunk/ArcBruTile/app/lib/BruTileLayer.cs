@@ -12,6 +12,7 @@ using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
 using log4net;
 using Microsoft.SqlServer.MessageBox;
+using BruTile.Cache;
 
 namespace BrutileArcGIS.Lib
 {
@@ -31,7 +32,7 @@ namespace BrutileArcGIS.Lib
         private EnumBruTileLayer _enumBruTileLayer;
         private string _cacheDir;
         private int _tileTimeOut;
-        private double _layerWeight=101;
+        private double _layerWeight = 101;
         private IConfig _config;
         public const string Guid = "1EF3586D-8B42-4921-9958-A73F4833A6FA";
         private string _currentLevel;
@@ -42,7 +43,7 @@ namespace BrutileArcGIS.Lib
         private string _auth;
 
         // used in the add services dialog
-        public BruTileLayer(IApplication app, EnumBruTileLayer enumBruTileLayer, string tmsUrl, bool overwriteUrls, string auth=null)
+        public BruTileLayer(IApplication app, EnumBruTileLayer enumBruTileLayer, string tmsUrl, bool overwriteUrls, string auth = null)
         {
             _auth = auth;
             ShowTips = false;
@@ -57,17 +58,17 @@ namespace BrutileArcGIS.Lib
         }
 
         // used by bing initializer
-        public BruTileLayer(IApplication application,EnumBruTileLayer enumBruTileLayer)
+        public BruTileLayer(IApplication application, EnumBruTileLayer enumBruTileLayer)
         {
             //var config = ConfigurationHelper.GetConfig();
             //var bingToken=config.AppSettings.Settings["BingToken"].Value;
             // var bingUrl = config.AppSettings.Settings["BingUrl"].Value;
-            
+
             ShowTips = false;
             Name = "BruTile";
             Cached = false;
             _config = ConfigHelper.GetConfig(enumBruTileLayer);
-            
+
             _application = application;
             _enumBruTileLayer = enumBruTileLayer;
             InitializeLayer();
@@ -85,6 +86,44 @@ namespace BrutileArcGIS.Lib
             InitializeLayer();
         }
 
+        // used by WMTS
+        public BruTileLayer(IApplication application, ITileSource tileSource)
+        {
+            LayerWeight = 110;
+            Cached = true;
+            _enumBruTileLayer = EnumBruTileLayer.WMTS;
+            _application = application;
+
+            var mxdoc = (IMxDocument)_application.Document;
+            _map = mxdoc.FocusMap;
+            _cacheDir = CacheSettings.GetCacheFolder();
+            _tileTimeOut = ConfigurationHelper.GetTileTimeOut();
+
+            var spatialReferences = new SpatialReferences();
+
+            _tileSource = tileSource;
+            _schema = _tileSource.Schema;
+            _dataSpatialReference = spatialReferences.GetSpatialReference(_schema.Srs);
+            _envelope = GetDefaultEnvelope();
+
+            if (_map.SpatialReference == null)
+            {
+                // zet dan de spatial ref...
+                _map.SpatialReference = _dataSpatialReference;
+            }
+
+            // If there is only one layer in the TOC zoom to this layer...
+            if (_map.LayerCount == 0)
+            {
+                _envelope.Project(_map.SpatialReference);
+                ((IActiveView)_map).Extent = _envelope;
+            }
+
+            _displayFilter = new TransparencyDisplayFilterClass();
+
+        }
+
+
         private void InitializeLayer()
         {
             LayerWeight = 110;
@@ -96,7 +135,7 @@ namespace BrutileArcGIS.Lib
 
             var spatialReferences = new SpatialReferences();
 
-            _tileSource=_config.CreateTileSource();
+            _tileSource = _config.CreateTileSource();
             _schema = _tileSource.Schema;
             _dataSpatialReference = spatialReferences.GetSpatialReference(_schema.Srs);
             _envelope = GetDefaultEnvelope();
@@ -147,7 +186,7 @@ namespace BrutileArcGIS.Lib
                                     //_envelope = activeView.Extent;
                                     //_envelope = clipEnvelope;
 
-                                    Logger.Debug("Draw extent: xmin:" + clipEnvelope.XMin + 
+                                    Logger.Debug("Draw extent: xmin:" + clipEnvelope.XMin +
                                                  ", ymin:" + clipEnvelope.YMin +
                                                  ", xmax:" + clipEnvelope.XMax +
                                                  ", ymax:" + clipEnvelope.YMax
@@ -167,13 +206,23 @@ namespace BrutileArcGIS.Lib
                                     {
                                         display.Filter = _displayFilter;
                                     }
-                                    var fileCache = CacheDirectory.GetFileCache(_cacheDir,_config,_enumBruTileLayer);
+
+                                    FileCache fileCache;
+
+                                    if (_config != null)
+                                    {
+                                        fileCache = CacheDirectory.GetFileCache(_cacheDir, _config, _enumBruTileLayer);
+                                    }
+                                    else
+                                    {
+                                        fileCache = CacheDirectory.GetFileCache(_cacheDir, _tileSource, _enumBruTileLayer);
+                                    }
 
                                     if (_enumBruTileLayer == EnumBruTileLayer.Giscloud &&
                                         _config.CreateTileSource().Schema.Format == "jpg")
                                     {
                                         // potential black borders: need to add a check for clip....
-                                        bruTileHelper.ClipTilesEnvelope=_envelope;
+                                        bruTileHelper.ClipTilesEnvelope = _envelope;
                                     }
                                     bruTileHelper.Draw(_application.StatusBar.ProgressBar, activeView, fileCache, trackCancel, SpatialReference, ref _currentLevel, _tileSource, display, _auth);
                                 }
@@ -198,8 +247,8 @@ namespace BrutileArcGIS.Lib
 
         public IEnvelope AreaOfInterest
         {
-            get{return _envelope;}
-            set{_envelope=value;}
+            get { return _envelope; }
+            set { _envelope = value; }
         }
 
         public bool Cached { get; set; }
@@ -218,7 +267,7 @@ namespace BrutileArcGIS.Lib
 
         public bool ScaleRangeReadOnly
         {
-            get {return true; }
+            get { return true; }
         }
 
         public bool ShowTips { get; set; }
@@ -244,7 +293,7 @@ namespace BrutileArcGIS.Lib
 
         public bool Visible
         {
-            get{return _visible;}
+            get { return _visible; }
             set
             {
                 _visible = value;
@@ -271,7 +320,7 @@ namespace BrutileArcGIS.Lib
 
         public IEnvelope Extent
         {
-            get 
+            get
             {
                 return _envelope;
             }
@@ -431,7 +480,7 @@ namespace BrutileArcGIS.Lib
             }
             set
             {
-                _displayFilter = (ITransparencyDisplayFilter) value;
+                _displayFilter = (ITransparencyDisplayFilter)value;
             }
         }
     }

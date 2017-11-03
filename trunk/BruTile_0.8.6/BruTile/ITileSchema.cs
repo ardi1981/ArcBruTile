@@ -17,7 +17,7 @@ namespace BruTile
         int GetMatrixWidth(string levelId);
         int GetMatrixHeight(string levelId);
         IDictionary<string, Resolution> Resolutions { get; }
-        string Format { get; }
+        string Format { get; set; }
         AxisDirection Axis { get; }
         IEnumerable<TileInfo> GetTilesInView(Extent extent, string levelId);
         IEnumerable<TileInfo> GetTilesInView(Extent extent, double resolution);

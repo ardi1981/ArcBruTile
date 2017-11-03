@@ -28,6 +28,7 @@ namespace BrutileArcGIS.Toolbars
             BeginGroup();
             BeginGroup();
             AddItem(typeof(OsmMenuDef));
+            AddItem(typeof(ThunderforestMenuDef));
             AddItem(typeof(BingMenuDef));
             AddItem(typeof(StamenMenuDef));
             AddItem(typeof(MapBoxMenuDef));

@@ -177,9 +177,14 @@
     <Compile Include="commands\AddNokiaTerrainLayerCommand.cs" />
     <Compile Include="commands\AddNokiaTrafficLayerCommand.cs" />
     <Compile Include="commands\AddNokiaTransitLayerCommand.cs" />
+    <Compile Include="commands\AddOsmBlackWhiteLayerCommand.cs" />
+    <Compile Include="commands\AddOsmDELayerCommand.cs" />
+    <Compile Include="commands\AddOsmFRLayerCommand.cs" />
+    <Compile Include="commands\AddOsmOpenTopoLayerCommand.cs" />
     <Compile Include="commands\AddPdokLayerCommand.cs" />
     <Compile Include="commands\AddStravaLayerCommand.cs" />
     <Compile Include="commands\AddTaobaoLayerCommand.cs" />
+    <Compile Include="commands\AddThunderforestOpenCycleLayerCommand.cs" />
     <Compile Include="commands\AddTiandituSatelliteLayerCommand.cs" />
     <Compile Include="commands\AddTiandituWorldLayerCommand.cs" />
     <Compile Include="commands\AddTileLayerCommand.cs" />
@@ -229,6 +234,7 @@
     <Compile Include="lib\NokiaConfig.cs" />
     <Compile Include="lib\Requester.cs" />
     <Compile Include="lib\TileCalculator.cs" />
+    <Compile Include="lib\WmtsLayerHelper.cs" />
     <Compile Include="lib\WorldToScreen.cs" />
     <Compile Include="lib\YandexConfig.cs" />
     <Compile Include="lib\YandexSchema.cs" />
@@ -242,6 +248,7 @@
     <Compile Include="MenuDefs\PdokMenuDef.cs" />
     <Compile Include="MenuDefs\StravaMenuDef.cs" />
     <Compile Include="MenuDefs\TaobaoMenuDef.cs" />
+    <Compile Include="MenuDefs\ThunderforestMenuDef.cs" />
     <Compile Include="MenuDefs\TiandituMenuDef.cs" />
     <Compile Include="MenuDefs\TomTomMenuDef.cs" />
     <Compile Include="MenuDefs\VworldMenuDef.cs" />

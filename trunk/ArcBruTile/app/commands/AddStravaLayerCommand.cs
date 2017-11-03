@@ -31,4 +31,13 @@ namespace BrutileArcGIS.commands
         }
     }
 
+    [ProgId("AddStravaRideLayerCommand")]
+    public sealed class AddStravaRideLayerCommand : AddTmsLayerCommandBase
+    {
+        public AddStravaRideLayerCommand()
+            : base("BruTile", "&Ride", "Add Strava Ride Layer", "Strava Ride heatmap", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-ride.xml", EnumBruTileLayer.InvertedTMS)
+        {
+        }
+    }
+
 }

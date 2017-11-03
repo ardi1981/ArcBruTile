@@ -32,5 +32,7 @@ namespace BrutileArcGIS.lib
         {
             return Provider.GetTile(tileInfo);
         }
+
+        public string Title { get; set; }
     }
 }

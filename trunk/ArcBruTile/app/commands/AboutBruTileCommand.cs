@@ -4,6 +4,10 @@ using BrutileArcGIS.Lib;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
 using ESRI.ArcGIS.Framework;
+using BruTile.Wmts;
+using System.Net.Http;
+using System.Linq;
+using ESRI.ArcGIS.Carto;
 
 namespace BrutileArcGIS.commands
 {
@@ -37,8 +41,22 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            var bruTileAboutBox = new BruTileAboutBox();
-            bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
+            //var bruTileAboutBox = new BruTileAboutBox();
+            //bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
+            var mxdoc = (IMxDocument)_application.Document;
+            var map = mxdoc.FocusMap;
+
+            var httpClient = new HttpClient();
+            var stream = httpClient.GetStreamAsync("https://bertt.github.io/wmts/capabilities/michelin.xml").Result;
+            var michelinTileSource = WmtsParser.Parse(stream).First();
+            // todo: make dynamic
+            michelinTileSource.Schema.Format = "png";
+            var brutileLayer = new BruTileLayer(_application, michelinTileSource)
+            {
+                Name = "Michelin",
+                Visible = true
+            };
+            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
         }
     }
 }

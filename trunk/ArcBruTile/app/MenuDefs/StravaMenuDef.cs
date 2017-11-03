@@ -11,6 +11,7 @@ namespace BrutileArcGIS.MenuDefs
             AddItem(typeof(AddStravaCyclingLayerCommand));
             AddItem(typeof(AddStravaRunningLayerCommand));
             AddItem(typeof(AddStravaBothLayerCommand));
+            AddItem(typeof(AddStravaRideLayerCommand));
         }
     }
 }

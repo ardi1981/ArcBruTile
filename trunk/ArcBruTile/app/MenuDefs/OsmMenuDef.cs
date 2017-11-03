@@ -17,12 +17,29 @@ namespace BrutileArcGIS.MenuDefs
                     itemDef.ID = "AddOsmLayerCommand1";
                     itemDef.Group = false;
                     break;
+                case 1:
+                    itemDef.ID = "AddOsmBlackWhiteCommand";
+                    itemDef.Group = false;
+                    break;
+                case 2:
+                    itemDef.ID = "AddOsmDECommand";
+                    itemDef.Group = false;
+                    break;
+                case 3:
+                    itemDef.ID = "AddOsmFRCommand";
+                    itemDef.Group = false;
+                    break;
+                case 4:
+                    itemDef.ID = "AddOsmOpenTopoMapCommand";
+                    itemDef.Group = false;
+                    break;
+
             }
         }
 
         public int ItemCount
         {
-            get { return 1; }
+            get { return 5; }
         }
 
         public string Name

@@ -7,6 +7,7 @@
         TMS, 
         WMSC, 
         InvertedTMS,
-        Giscloud
+        Giscloud,
+        WMTS
     }
 }
