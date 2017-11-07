@@ -13,7 +13,6 @@ namespace BrutileArcGIS.commands
     [ProgId("AddBaiduSatelliteLayerCommand")]
     public class AddBaiduSatelliteLayerCommand : BaseCommand
     {
-
         private IApplication _application;
 
         public AddBaiduSatelliteLayerCommand()

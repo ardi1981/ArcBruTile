@@ -52,13 +52,10 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/osm.xml";
-                var wmtsLayer = WmtsLayerHelper.GetWmtsLayer(url, "OpenStreetMap.FR", "OpenStreetMap.FR");
-                if (wmtsLayer != null)
-                {
-                    var mxdoc = (IMxDocument)_application.Document;
-                    var map = mxdoc.FocusMap;
-                    ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
-                }
+                var wmtsLayer = WmtsHelper.GetWmtsLayerArcGIS(url, "OpenStreetMap.FR", "osm-openstreetmap.fr");
+                var mxdoc = (IMxDocument)_application.Document;
+                var map = mxdoc.FocusMap;
+                ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
             }
             catch (Exception ex)
             {

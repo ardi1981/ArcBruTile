@@ -52,7 +52,7 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/osm.xml";
-                var wmtsLayer = WmtsLayerHelper.GetWmtsLayer(url, "OpenStreetMap.DE", "OpenStreetMap.DE");
+                var wmtsLayer = WmtsHelper.GetWmtsLayerArcGIS(url, "OpenStreetMap.DE", "osm-openstreetmap.de");
                 if (wmtsLayer != null)
                 {
                     var mxdoc = (IMxDocument)_application.Document;

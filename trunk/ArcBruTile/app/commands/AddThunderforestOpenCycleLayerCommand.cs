@@ -52,13 +52,10 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/thunderforest.xml";
-                var wmtsLayer = WmtsLayerHelper.GetWmtsLayer(url, "OpenCycleMap", "thunderforest-opencyclemap");
-                if (wmtsLayer != null)
-                {
-                    var mxdoc = (IMxDocument)_application.Document;
-                    var map = mxdoc.FocusMap;
-                    ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
-                }
+                var wmtsLayer = WmtsHelper.GetWmtsLayerArcGIS(url, "OpenCycleMap", "thunderforest-opencyclemap");
+                var mxdoc = (IMxDocument)_application.Document;
+                var map = mxdoc.FocusMap;
+                ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
             }
             catch (Exception ex)
             {

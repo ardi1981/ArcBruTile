@@ -8,6 +8,7 @@ using BruTile.Wmts;
 using System.Net.Http;
 using System.Linq;
 using ESRI.ArcGIS.Carto;
+using BrutileArcGIS.lib;
 
 namespace BrutileArcGIS.commands
 {
@@ -45,19 +46,14 @@ namespace BrutileArcGIS.commands
             //bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
+            // what to do: BruTile way
+            var brutileLayer = WmtsHelper.GetWmtsLayer(_application, "png", "https://bertt.github.io/wmts/capabilities/michelin.xml", "Michelin", "michelin-streets");
+            // or ArcGIS?
+            // var brutileLayer = WmtsHelper.GetWmtsLayerArcGIS("https://bertt.github.io/wmts/capabilities/michelin.xml", "Michelin", "michelin-streets");
 
-            var httpClient = new HttpClient();
-            var stream = httpClient.GetStreamAsync("https://bertt.github.io/wmts/capabilities/michelin.xml").Result;
-            var michelinTileSource = WmtsParser.Parse(stream).First();
-            // todo: make dynamic
-            michelinTileSource.Schema.Format = "png";
-            var brutileLayer = new BruTileLayer(_application, michelinTileSource)
-            {
-                Name = "Michelin",
-                Visible = true
-            };
             ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
         }
+
     }
 }
 

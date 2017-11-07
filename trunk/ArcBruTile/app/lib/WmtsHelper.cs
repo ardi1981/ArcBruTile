@@ -1,12 +1,36 @@
-﻿using ESRI.ArcGIS.Carto;
+﻿using BruTile.Wmts;
+using BrutileArcGIS.Lib;
+using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.esriSystem;
+using ESRI.ArcGIS.Framework;
 using ESRI.ArcGIS.GISClient;
+using System.Linq;
+using System.Net.Http;
 
 namespace BrutileArcGIS.lib
 {
-    public class WmtsLayerHelper
+    public class WmtsHelper
     {
-        public static WMTSLayerClass GetWmtsLayer(string Url, string LayerName, string LayerId)
+        public static BruTileLayer GetWmtsLayer(IApplication _application, string format, string capabilitiesUrl, string LayerName, string LayerId)
+        {
+            var httpClient = new HttpClient();
+            var stream = httpClient.GetStreamAsync(capabilitiesUrl).Result;
+            // todo: take other layers as well
+            var tileSources = WmtsParser.Parse(stream);
+
+            var tileSource = (from a in tileSources where a.Title == LayerId select a).FirstOrDefault();
+            // todo: make dynamic
+            tileSource.Schema.Format = format;
+
+            var brutileLayer = new BruTileLayer(_application, tileSource)
+            {
+                Name = LayerName,
+                Visible = true
+            };
+            return brutileLayer;
+        }
+
+        public static WMTSLayerClass GetWmtsLayerArcGIS(string Url, string LayerName, string LayerId)
         {
             var propSet = new PropertySetClass();
             propSet.SetProperty("URL", Url);
@@ -33,5 +57,7 @@ namespace BrutileArcGIS.lib
             }
             return null;
         }
+
+
     }
 }

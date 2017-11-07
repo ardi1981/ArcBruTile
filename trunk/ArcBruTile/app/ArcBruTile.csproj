@@ -234,7 +234,7 @@
     <Compile Include="lib\NokiaConfig.cs" />
     <Compile Include="lib\Requester.cs" />
     <Compile Include="lib\TileCalculator.cs" />
-    <Compile Include="lib\WmtsLayerHelper.cs" />
+    <Compile Include="lib\WmtsHelper.cs" />
     <Compile Include="lib\WorldToScreen.cs" />
     <Compile Include="lib\YandexConfig.cs" />
     <Compile Include="lib\YandexSchema.cs" />
