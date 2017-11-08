@@ -30,6 +30,7 @@ namespace BrutileArcGIS.lib
             return brutileLayer;
         }
 
+        /**
         public static WMTSLayerClass GetWmtsLayerArcGIS(string Url, string LayerName, string LayerId)
         {
             var propSet = new PropertySetClass();
@@ -57,6 +58,7 @@ namespace BrutileArcGIS.lib
             }
             return null;
         }
+    */
 
 
     }
