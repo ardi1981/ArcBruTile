@@ -13,7 +13,7 @@ namespace BrutileArcGIS.lib
         public MapBoxVectorTileSource(string url, string ext="pbf")
         {
             var request = new TmsRequest(new Uri(url), ext);
-            Provider = new WebTileProvider(request, fetchTile: FetchTile);
+            Provider = new HttpTileProvider(request, fetchTile: FetchTile);
             Schema = new GlobalSphericalMercator();
         }
         byte[] FetchTile(Uri uir)
@@ -25,7 +25,7 @@ namespace BrutileArcGIS.lib
         }
 
         public ITileProvider Provider { get; private set; }
-        public ITileSchema Schema { get; private set; }
+        public ITileSchema Schema { get; set; }
         public string Name { get; private set; }
 
         public byte[] GetTile(TileInfo tileInfo)
@@ -34,5 +34,7 @@ namespace BrutileArcGIS.lib
         }
 
         public string Title { get; set; }
+
+        public Attribution Attribution => throw new NotImplementedException();
     }
 }

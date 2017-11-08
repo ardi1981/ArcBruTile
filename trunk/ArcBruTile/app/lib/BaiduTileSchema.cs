@@ -18,14 +18,14 @@ namespace BrutileArcGIS.lib
                 };
                 Resolutions[res.Id] = new Resolution { Id = res.Id, UnitsPerPixel = res.UnitsPerPixel };
             }
-            Height = 256;
-            Width = 256;
+            //Height = 256;
+            //Width = 256;
             Extent = new Extent(-20037508.34, -20037508.34, 20037508.34, 20037508.34);
             OriginX = 0;
             OriginY = 0;
             Format = "png";
             Name = "BAIDU";
-            Axis = AxisDirection.Normal;
+            YAxis = YAxis.OSM;
             Srs = "EPSG:900913";
         }
     }

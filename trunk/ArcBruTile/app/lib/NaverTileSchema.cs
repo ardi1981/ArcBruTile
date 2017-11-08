@@ -18,13 +18,13 @@ namespace BrutileArcGIS.lib
                 Resolutions[levelId] = new Resolution { Id = levelId, UnitsPerPixel = resolution };
                 count++;
             }
-            Height = 256;
-            Width = 256;
+            //Height = 256;
+            //Width = 256;
             OriginX = 90112;
             OriginY = 1192896;
             Extent = new Extent(90112, 1192896, 1990673, 2761664);
             Format = "png";
-            Axis = AxisDirection.Normal;
+            YAxis = YAxis.OSM;
             Srs = "EPSG:5179";
         }
     }

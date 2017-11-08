@@ -40,7 +40,7 @@ namespace BrutileArcGIS.lib
                 var level = Utilities.GetNearestLevel(schema.Resolutions, transform.Resolution);
                 Logger.Debug("Current level: " + level);
 
-                var tiles = schema.GetTilesInView(transform.Extent, level);
+                var tiles = schema.GetTileInfos(transform.Extent, level);
 
                 var ti = new TileInfos { Level = level, Tiles = tiles.ToList() };
                 return ti;

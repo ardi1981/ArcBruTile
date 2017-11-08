@@ -3,6 +3,7 @@ using BruTile.Cache;
 using BrutileArcGIS.Lib;
 using System.IO;
 using BruTile;
+using BruTile.Wmts;
 
 namespace BrutileArcGIS.lib
 {
@@ -48,7 +49,7 @@ namespace BrutileArcGIS.lib
         // for wmts
         private static string GetCacheDirectory(ITileSource tileSource, EnumBruTileLayer layerType, string baseCacheDir)
         {
-            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, tileSource.Title);
+            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, ((WmtsTileSchema)tileSource.Schema).Layer);
             return cacheDirectory;
         }
 

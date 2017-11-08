@@ -23,7 +23,7 @@ namespace BrutileArcGIS.Lib
             var response = (HttpWebResponse)request.GetResponse();
             var stream = response.GetResponseStream();
             var tileSource = TileMapParser.CreateTileSource(stream);
-            var s = new SphericalMercatorInvertedWorldSchema();
+            var s = new GlobalSphericalMercator();
 
             // now remove all resolutions that are not in the Tilesource.
             // For example Strava level 18 we must not draw.

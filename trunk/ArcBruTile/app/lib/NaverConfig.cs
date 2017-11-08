@@ -18,7 +18,7 @@ namespace BrutileArcGIS.lib
             var tileSchema = new NaverTileSchema();
             var servers = new List<string> {"onetile1", "onetile2", "onetile3", "onetile4"};
             var naverRequest = new BasicRequest(Url,servers);
-            var tileProvider = new WebTileProvider(naverRequest);
+            var tileProvider = new HttpTileProvider(naverRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

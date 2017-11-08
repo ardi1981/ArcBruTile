@@ -3,13 +3,13 @@ using BruTile.Predefined;
 
 namespace BrutileArcGIS.lib
 {
-    public class YandexSchema : SphericalMercatorWorldSchema
+    public class YandexSchema : GlobalSphericalMercator
     {
         public YandexSchema()
         {
             Name = "YandexMaps";
             Format = "png";
-            Axis = AxisDirection.InvertedY;
+            YAxis = YAxis.OSM;
             OriginY = -OriginY;
             Srs = "EPSG:3395";
         }

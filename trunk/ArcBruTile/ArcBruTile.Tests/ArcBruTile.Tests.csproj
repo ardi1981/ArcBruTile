@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BruTile">
-      <HintPath>..\app\brutile\0.8.6\BruTile.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BingConfigTests.cs" />
     <Compile Include="GisCloudUtilTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +54,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BruTile_0.22.1\BruTile\BruTile.csproj">
+      <Project>{9fb60e2d-c682-4a01-9584-8b495b8da85a}</Project>
+      <Name>BruTile</Name>
+    </ProjectReference>
     <ProjectReference Include="..\app\ArcBruTile.csproj">
       <Project>{501036a0-a949-4e35-a8bf-b375cd6d20c3}</Project>
       <Name>ArcBruTile</Name>

@@ -22,7 +22,7 @@ namespace BrutileArcGIS.lib
             var tileSchema = new GlobalSphericalMercator();
             var servers = new List<string> { "1", "2", "3", "4" };
             var nokiaRequest = new BasicRequest(_url, servers);
-            var tileProvider = new WebTileProvider(nokiaRequest);
+            var tileProvider = new HttpTileProvider(nokiaRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

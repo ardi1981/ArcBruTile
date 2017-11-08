@@ -33,7 +33,7 @@ namespace BrutileArcGIS.Lib
         bool _needReproject;
         List<TileInfo> _tiles;
         private IDisplay _display;
-        static WebTileProvider _tileProvider;
+        static HttpTileProvider _tileProvider;
         private static string _auth;
 
         public BruTileHelper(int tileTimeOut)
@@ -54,7 +54,7 @@ namespace BrutileArcGIS.Lib
             _layerSpatialReference = layerSpatialReference;
             _currentLevel = currentLevel;
             _fileCache = fileCache;
-            _tileProvider = (WebTileProvider)tileSource.Provider;
+            _tileProvider = (HttpTileProvider)tileSource.Provider;
             var spatialReferences = new SpatialReferences();
             _dataSpatialReference = spatialReferences.GetSpatialReference(tileSource.Schema.Srs);
 

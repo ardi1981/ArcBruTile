@@ -2,6 +2,7 @@
 using BrutileArcGIS.Lib;
 using BruTile;
 using BruTile.Web;
+using BruTile.Predefined;
 
 namespace BrutileArcGIS.lib
 {
@@ -21,7 +22,7 @@ namespace BrutileArcGIS.lib
             var tileSchema = new YandexSchema();
             var servers = new List<string> { "01", "02", "03", "04" };
             var yandexRequest = new BasicRequest(_url, servers);
-            var tileProvider = new WebTileProvider(yandexRequest);
+            var tileProvider = new HttpTileProvider(yandexRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

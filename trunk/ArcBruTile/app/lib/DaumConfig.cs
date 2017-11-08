@@ -17,7 +17,7 @@ namespace BrutileArcGIS.lib
         {
             var tileSchema = new DaumTileSchema();
             var daumRequest = new DaumRequest(Url, new List<string>{"0","1","2","3"});
-            var tileProvider = new WebTileProvider(daumRequest);
+            var tileProvider = new HttpTileProvider(daumRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

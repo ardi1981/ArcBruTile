@@ -18,7 +18,7 @@ namespace BrutileArcGIS.lib
             // todo: take other layers as well
             var tileSources = WmtsParser.Parse(stream);
 
-            var tileSource = (from a in tileSources where a.Title == LayerId select a).FirstOrDefault();
+            var tileSource = (from a in tileSources where ((WmtsTileSchema)a.Schema).Layer == LayerId select a).FirstOrDefault();
             // todo: make dynamic
             tileSource.Schema.Format = format;
 

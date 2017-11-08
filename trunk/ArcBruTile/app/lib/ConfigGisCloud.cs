@@ -18,8 +18,8 @@ namespace BrutileArcGIS.lib
         public ITileSource CreateTileSource()
         {
             var tilesource = new TileSource(
-                new WebTileProvider(new BasicRequest(Url)),
-                new GlobalSphericalMercator(Format, true, 1, 19,"giscloud"));
+                new HttpTileProvider(new BasicRequest(Url)),
+                new GlobalSphericalMercator(Format, YAxis.OSM, 1, 19,"giscloud"));
             return tilesource;
         }
 

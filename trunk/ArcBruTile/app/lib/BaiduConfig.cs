@@ -19,7 +19,7 @@ namespace BrutileArcGIS.lib
             var tileSchema = new BaiduTileSchema();
             var servers = new List<string> { "1", "2", "3", "4", "5","6","7","8","9" };
             var baiduRequest = new BasicRequest(Url, servers);
-            var tileProvider = new WebTileProvider(baiduRequest);
+            var tileProvider = new HttpTileProvider(baiduRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

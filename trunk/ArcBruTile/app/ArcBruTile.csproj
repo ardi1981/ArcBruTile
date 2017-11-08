@@ -262,7 +262,6 @@
     </Compile>
     <Compile Include="MenuDefs\BruTileMenuDef.cs" />
     <Compile Include="commands\AboutBruTileCommand.cs" />
-    <Compile Include="commands\AddBingLayerCommand.cs" />
     <Compile Include="commands\AddBruTileLayerCommandBase.cs" />
     <Compile Include="commands\AddMapBoxLayerCommand.cs" />
     <Compile Include="commands\AddServicesCommand.cs" />
@@ -290,7 +289,6 @@
     <Compile Include="lib\BruTileLayer.cs" />
     <Compile Include="lib\CacheDirectory.cs" />
     <Compile Include="lib\CacheSettings.cs" />
-    <Compile Include="lib\ConfigBingHybrid.cs" />
     <Compile Include="lib\ConfigInvertedTMS.cs" />
     <Compile Include="lib\ConfigTms.cs" />
     <Compile Include="lib\EnvelopeExtensionMethods.cs" />
@@ -300,7 +298,6 @@
     <Compile Include="lib\MultipleThreadResetEvent.cs" />
     <Compile Include="lib\OsmMapType.cs" />
     <Compile Include="lib\Projector.cs" />
-    <Compile Include="lib\ConfigBing.cs" />
     <Compile Include="lib\ConfigHelper.cs" />
     <Compile Include="lib\ConfigOsm.cs" />
     <Compile Include="lib\ConfigurationHelper.cs" />
@@ -396,11 +393,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BruTile_0.8.6\BruTile.Desktop\BruTile.Desktop.csproj">
+    <ProjectReference Include="..\..\BruTile_0.22.1\BruTile.Desktop\BruTile.Desktop.csproj">
       <Project>{2f6d9e1c-2001-40c8-89ba-fdf8597bb719}</Project>
       <Name>BruTile.Desktop</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\BruTile_0.8.6\BruTile\BruTile.csproj">
+    <ProjectReference Include="..\..\BruTile_0.22.1\BruTile\BruTile.csproj">
       <Project>{9fb60e2d-c682-4a01-9584-8b495b8da85a}</Project>
       <Name>BruTile</Name>
     </ProjectReference>
