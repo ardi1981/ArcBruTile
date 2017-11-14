@@ -6,7 +6,7 @@ namespace BrutileArcGIS.MenuDefs
     {
         public string Caption
         {
-            get { return "&Nokia - HERE"; }
+            get { return "&Nokia"; }
         }
         public void GetItemInfo(int pos, IItemDef itemDef)
         {
@@ -36,7 +36,6 @@ namespace BrutileArcGIS.MenuDefs
                     itemDef.ID = "AddNokiaTransitLayerCommand";
                     itemDef.Group = false;
                     break;
-
             }
         }
 

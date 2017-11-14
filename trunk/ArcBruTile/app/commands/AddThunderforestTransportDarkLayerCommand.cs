@@ -10,18 +10,18 @@ using BrutileArcGIS.lib;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddThunderforestOpenCycleLayerCommand")]
-    public class AddThunderforestOpenCycleLayerCommand : BaseCommand
+    [ProgId("AddThunderforestTransportDarkLayerCommand")]
+    public class AddThunderforestTransportDarkLayerCommand : BaseCommand
     {
         private IApplication _application;
 
-        public AddThunderforestOpenCycleLayerCommand()
+        public AddThunderforestTransportDarkLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&OpenCycleMap";
-            m_message = "Add Thunderforest.OpenCycleMap layer";
+            m_caption = "&Transport Dark";
+            m_message = "Add Thunderforest.Transport Dark layer";
             m_toolTip = m_caption;
-            m_name = "AddThunderforestOpenCycleMapLayerCommand";
+            m_name = "AddThunderforestTransportDarkMapLayerCommand";
             m_bitmap = Resources.download;
         }
 
@@ -52,7 +52,7 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/thunderforest.xml";
-                var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenCycleMap", "thunderforest-opencyclemap");
+                var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Transport dark", "thunderforest-transportdark");
 
                 var mxdoc = (IMxDocument)_application.Document;
                 var map = mxdoc.FocusMap;

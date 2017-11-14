@@ -8,8 +8,8 @@ using ESRI.ArcGIS.Carto;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddOsmLayerCommand1")]
-    public sealed class AddOsmLayerCommand : BaseCommand
+    [ProgId("AddMichelinLayerCommand")]
+    public sealed class AddMichelinLayerCommand : BaseCommand
     {
         private IApplication _application;
 
@@ -26,21 +26,21 @@ namespace BrutileArcGIS.commands
                 m_enabled = false;
         }
 
-        public AddOsmLayerCommand()
+        public AddMichelinLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&Mapnik";
-            m_message = "AddOsmMapnik map";
+            m_caption = "&Michelin";
+            m_message = "AddMichelin map";
             m_toolTip = m_caption;
-            m_name = "AddOsmMapnikLayerCommand";
+            m_name = "AddMichelinLayerCommand";
             m_bitmap = Resources.download;
 
         }
 
         public override void OnClick()
         {
-            const string url = "https://bertt.github.io/wmts/capabilities/osm.xml";
-            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenStreetMap Mapnik", "osm-mapnik");
+            const string url = "https://bertt.github.io/wmts/capabilities/michelin.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Michelin", "michelin-streets");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
             ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);

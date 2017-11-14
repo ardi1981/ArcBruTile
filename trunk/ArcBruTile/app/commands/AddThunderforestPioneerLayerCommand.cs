@@ -4,25 +4,26 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Framework;
-using BrutileArcGIS.Properties;
 using System.Runtime.InteropServices;
 using BrutileArcGIS.lib;
+using BrutileArcGIS.Properties;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddThunderforestOpenCycleLayerCommand")]
-    public class AddThunderforestOpenCycleLayerCommand : BaseCommand
+    [ProgId("AddThunderforestPioneerLayerCommand")]
+    public class AddThunderforestPioneerLayerCommand : BaseCommand
     {
         private IApplication _application;
 
-        public AddThunderforestOpenCycleLayerCommand()
+        public AddThunderforestPioneerLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&OpenCycleMap";
-            m_message = "Add Thunderforest.OpenCycleMap layer";
+            m_caption = "&Pioneer";
+            m_message = "Add Thunderforest.Pioneer layer";
             m_toolTip = m_caption;
-            m_name = "AddThunderforestOpenCycleMapLayerCommand";
+            m_name = "AddThunderforestPioneerMapLayerCommand";
             m_bitmap = Resources.download;
+
         }
 
         public override bool Enabled
@@ -52,7 +53,7 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/thunderforest.xml";
-                var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenCycleMap", "thunderforest-opencyclemap");
+                var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Pioneer", "thunderforest-pioneer");
 
                 var mxdoc = (IMxDocument)_application.Document;
                 var map = mxdoc.FocusMap;

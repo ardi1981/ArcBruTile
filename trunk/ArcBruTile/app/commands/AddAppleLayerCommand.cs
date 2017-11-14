@@ -8,8 +8,8 @@ using ESRI.ArcGIS.Carto;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddOsmLayerCommand1")]
-    public sealed class AddOsmLayerCommand : BaseCommand
+    [ProgId("AddAppleLayerCommand")]
+    public sealed class AddAppleLayerCommand : BaseCommand
     {
         private IApplication _application;
 
@@ -26,21 +26,21 @@ namespace BrutileArcGIS.commands
                 m_enabled = false;
         }
 
-        public AddOsmLayerCommand()
+        public AddAppleLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&Mapnik";
-            m_message = "AddOsmMapnik map";
+            m_caption = "&Apple";
+            m_message = "AddApple map";
             m_toolTip = m_caption;
-            m_name = "AddOsmMapnikLayerCommand";
+            m_name = "AddAppleLayerCommand";
             m_bitmap = Resources.download;
 
         }
 
         public override void OnClick()
         {
-            const string url = "https://bertt.github.io/wmts/capabilities/osm.xml";
-            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenStreetMap Mapnik", "osm-mapnik");
+            const string url = "https://bertt.github.io/wmts/capabilities/apple.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Apple", "apple-streets");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
             ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
