@@ -1,6 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 using BrutileArcGIS.lib;
-using BrutileArcGIS.Lib;
 using BrutileArcGIS.Properties;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
@@ -9,19 +8,19 @@ using ESRI.ArcGIS.Framework;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddAutoNaviSatelliteLayerCommand")]
-    public class AddAutoNaviSatelliteLayerCommand : BaseCommand
+    [ProgId("AddTaobaoStreetsLayerCommand")]
+    public class AddTaobaoStreetsLayerCommand : BaseCommand
     {
 
         private IApplication _application;
 
-        public AddAutoNaviSatelliteLayerCommand()
+        public AddTaobaoStreetsLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&Satellite";
-            m_message = "AddAutoNaviSatellite map";
+            m_caption = "&Taobao streets";
+            m_message = "Add Taobao streets";
             m_toolTip = m_caption;
-            m_name = "AddAutoNaviSatelliteLayerCommand";
+            m_name = "AddTaobaoStreetsLayerCommand";
             m_bitmap = Resources.download;
         }
 
@@ -40,24 +39,11 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-
-            var url = "http://webst03.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&style=6";
-
-            var nokiaConfig = new NokiaConfig("AutoNavi Satellite", url);
-
-            var layerType = EnumBruTileLayer.InvertedTMS;
+            const string url = "https://bertt.github.io/wmts/capabilities/taobao.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Taobao streets", "taobao-streets");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
-
-            var brutileLayer = new BruTileLayer(_application, nokiaConfig, layerType)
-            {
-                Name = "AutoNavi Satellite",
-                Visible = true
-            };
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
-
-
-
+            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
         }
     }
 }

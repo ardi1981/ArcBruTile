@@ -8,8 +8,8 @@ namespace BrutileArcGIS.MenuDefs
         public TaobaoMenuDef()
         {
             m_barCaption = "Taobao";
-            AddItem(typeof(AddTaobaoLayerCommand));
-            AddItem(typeof(AddAutoNaviSatelliteLayerCommand));
+            AddItem(typeof(AddTaobaoStreetsLayerCommand));
+            AddItem(typeof(AddTaobaoSatelliteLayerCommand));
         }
     }
 }

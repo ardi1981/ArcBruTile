@@ -1,6 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 using BrutileArcGIS.lib;
-using BrutileArcGIS.Lib;
 using BrutileArcGIS.Properties;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
@@ -9,19 +8,19 @@ using ESRI.ArcGIS.Framework;
 
 namespace BrutileArcGIS.commands
 {
-    [ProgId("AddTaobaoLayerCommand")]
-    public class AddTaobaoLayerCommand : BaseCommand
+    [ProgId("AddTaobaoSatelliteLayerCommand")]
+    public class AddTaobaoSatelliteLayerCommand : BaseCommand
     {
 
         private IApplication _application;
 
-        public AddTaobaoLayerCommand()
+        public AddTaobaoSatelliteLayerCommand()
         {
             m_category = "BruTile";
-            m_caption = "&Taobao";
-            m_message = "Add Taobao";
+            m_caption = "&Taobao Satellite";
+            m_message = "AddTaobaoSatellite map";
             m_toolTip = m_caption;
-            m_name = "AddTaobaoLayerCommand";
+            m_name = "AddTaobaoSatelliteLayerCommand";
             m_bitmap = Resources.download;
         }
 
@@ -40,21 +39,11 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            var url = "http://wprd02.is.autonavi.com/appmaptile?style=7&x={x}&y={y}&z={z}";
-
-            var nokiaConfig = new NokiaConfig("Traffic", url);
-
-            var layerType = EnumBruTileLayer.InvertedTMS;
+            const string url = "https://bertt.github.io/wmts/capabilities/taobao.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Taobao satellite", "taobao-satellite");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
-
-            var brutileLayer = new BruTileLayer(_application, nokiaConfig, layerType)
-            {
-                Name = "Taobao",
-                Visible = true
-            };
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
-
+            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
         }
     }
 }

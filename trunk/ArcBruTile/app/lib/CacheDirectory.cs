@@ -85,16 +85,6 @@ namespace BrutileArcGIS.lib
                         url = ((BaiduConfig)config).Url;
                         url = url.Replace("?", "");
                     }
-                    else if (config is NokiaConfig)
-                    {
-                        url = ((NokiaConfig)config).Url;
-                        url = url.Replace("?", "");
-                    }
-                    else if (config is YandexConfig)
-                    {
-                        url = ((YandexConfig)config).Url;
-                        url = url.Replace("?", "");
-                    }
                     else if (config is TileLayerConfig)
                     {
                         url = ((TileLayerConfig)config).Url;
