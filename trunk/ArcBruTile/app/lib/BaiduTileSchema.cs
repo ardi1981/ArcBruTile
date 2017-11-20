@@ -26,7 +26,7 @@ namespace BrutileArcGIS.lib
             Format = "png";
             Name = "BAIDU";
             YAxis = YAxis.OSM;
-            Srs = "EPSG:900913";
+            Srs = "EPSG:3857";
         }
     }
 }

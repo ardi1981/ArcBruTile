@@ -8,10 +8,11 @@ namespace BrutileArcGIS.MenuDefs
         public StravaMenuDef()
         {
             m_barCaption = "&Strava";
-            AddItem(typeof(AddStravaCyclingLayerCommand));
-            AddItem(typeof(AddStravaRunningLayerCommand));
             AddItem(typeof(AddStravaBothLayerCommand));
-            AddItem(typeof(AddStravaRideLayerCommand));
+            AddItem(typeof(AddStrava2017LayerCommand));
+            //AddItem(typeof(AddStravaCyclingLayerCommand));
+            //AddItem(typeof(AddStravaRunningLayerCommand));
+            //AddItem(typeof(AddStravaRideLayerCommand));
         }
     }
 }

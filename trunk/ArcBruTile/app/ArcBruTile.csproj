@@ -157,6 +157,9 @@
       <DependentUpon>ArcBruTileInstaller.cs</DependentUpon>
     </Compile>
     <Compile Include="commands\AboutPdokCommand.cs" />
+    <Compile Include="commands\AddGaodeSatelliteLayerCommand.cs" />
+    <Compile Include="commands\AddGaodeStreetsLayerCommand.cs" />
+    <Compile Include="commands\AddStrava2017LayerCommand.cs" />
     <Compile Include="commands\AddTaobaoSatelliteLayerCommand.cs" />
     <Compile Include="commands\AddBaiduTerrainLayerCommand.cs" />
     <Compile Include="commands\AddBaiduSatelliteLayerCommand.cs" />
@@ -204,6 +207,12 @@
     <Compile Include="commands\AddYandexStreetsLayerCommand.cs" />
     <Compile Include="commands\DemoCustomLayer.cs" />
     <Compile Include="commands\TileLayerConfig.cs" />
+    <Compile Include="forms\AddStravaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AddStravaForm.Designer.cs">
+      <DependentUpon>AddStravaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\AddGisCloudForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +237,8 @@
     <Compile Include="lib\BaseGroupLayer.cs" />
     <Compile Include="lib\ConfigGisCloud.cs" />
     <Compile Include="lib\DaumRequest.cs" />
+    <Compile Include="lib\StravaActivityType.cs" />
+    <Compile Include="lib\StravaColor.cs" />
     <Compile Include="lib\GisCloudApiRetriever.cs" />
     <Compile Include="lib\GISCloudLayer.cs" />
     <Compile Include="lib\GisCloudUtil.cs" />
@@ -246,6 +257,7 @@
     <Compile Include="MenuDefs\BaiduMenuDef.cs" />
     <Compile Include="MenuDefs\CartoDBMenuDef.cs" />
     <Compile Include="MenuDefs\DaumMenuDef.cs" />
+    <Compile Include="MenuDefs\GaodeMenuDef.cs" />
     <Compile Include="MenuDefs\IsHowChinaMenuDef.cs" />
     <Compile Include="MenuDefs\AppleMenuDef.cs" />
     <Compile Include="MenuDefs\MichelinMenuDef.cs" />
@@ -331,6 +343,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="forms\AddStravaForm.resx">
+      <DependentUpon>AddStravaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\AddGisCloudForm.resx">
       <DependentUpon>AddGisCloudForm.cs</DependentUpon>
     </EmbeddedResource>

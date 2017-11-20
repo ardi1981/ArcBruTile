@@ -42,7 +42,6 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-
             var addGisCloudForm = new AddGisCloudForm();
             var dr = addGisCloudForm.ShowDialog(new ArcMapWindow(_application));
             if (dr == DialogResult.OK)

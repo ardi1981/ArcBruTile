@@ -17,7 +17,7 @@ namespace BruTile.Wmts
         public const string TileMatrixSetTag = "{TileMatrixSet}";
         public const string StyleTag = "{Style}";
 
-        private readonly List<ResourceUrl> _resourceUrls;
+        public readonly List<ResourceUrl> _resourceUrls;
         private int _resourceUrlCounter;
         private readonly object _syncLock = new object();
 

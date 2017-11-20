@@ -133,6 +133,8 @@ namespace BruTile.Wmts
         
         public IDictionary<string, Resolution> Resolutions { get; set; }
 
+
+
         public int GetTileWidth(string levelId)
         {
             return Resolutions[levelId].TileWidth;

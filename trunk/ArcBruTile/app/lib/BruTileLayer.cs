@@ -259,6 +259,13 @@ namespace BrutileArcGIS.Lib
             set { _enumBruTileLayer = value; }
         }
 
+        public ITileSource TileSource
+        {
+            get { return _tileSource; }
+            set { _tileSource=value; }
+
+        }
+
         public double MaximumScale { get; set; }
 
         public double MinimumScale { get; set; }
