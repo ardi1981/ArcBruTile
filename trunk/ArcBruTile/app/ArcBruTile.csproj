@@ -159,6 +159,7 @@
     <Compile Include="commands\AboutPdokCommand.cs" />
     <Compile Include="commands\AddGaodeSatelliteLayerCommand.cs" />
     <Compile Include="commands\AddGaodeStreetsLayerCommand.cs" />
+    <Compile Include="commands\AddKosmosnimkiStreetsLayerCommand.cs" />
     <Compile Include="commands\AddStrava2017LayerCommand.cs" />
     <Compile Include="commands\AddTaobaoSatelliteLayerCommand.cs" />
     <Compile Include="commands\AddBaiduTerrainLayerCommand.cs" />
@@ -254,6 +255,7 @@
     <Compile Include="lib\TileCalculator.cs" />
     <Compile Include="lib\WmtsHelper.cs" />
     <Compile Include="lib\WorldToScreen.cs" />
+    <Compile Include="MenuDefs\KosmosnimkiMenuDef.cs" />
     <Compile Include="MenuDefs\BaiduMenuDef.cs" />
     <Compile Include="MenuDefs\CartoDBMenuDef.cs" />
     <Compile Include="MenuDefs\DaumMenuDef.cs" />
