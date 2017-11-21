@@ -1,4 +1,5 @@
-﻿using BruTile.Wmts;
+﻿using BruTile;
+using BruTile.Wmts;
 using BrutileArcGIS.Lib;
 using ESRI.ArcGIS.Framework;
 using System.Linq;
@@ -8,6 +9,16 @@ namespace BrutileArcGIS.lib
 {
     public class WmtsHelper
     {
+        public static BruTileLayer GetWmtsLayer(IApplication _application, ITileSource tileSource, string LayerName)
+        {
+            var brutileLayer = new BruTileLayer(_application, tileSource)
+            {
+                Name = LayerName,
+                Visible = true
+            };
+            return brutileLayer;
+        }
+
         public static BruTileLayer GetWmtsLayer(IApplication _application, string format, string capabilitiesUrl, string LayerName, string LayerId)
         {
             var httpClient = new HttpClient();

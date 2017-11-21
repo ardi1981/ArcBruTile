@@ -49,7 +49,8 @@ namespace BrutileArcGIS.lib
         // for wmts
         private static string GetCacheDirectory(ITileSource tileSource, EnumBruTileLayer layerType, string baseCacheDir)
         {
-            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, ((WmtsTileSchema)tileSource.Schema).Layer);
+            var name = (tileSource is BruTile.Web.HttpTileSource ? tileSource.Name : ((WmtsTileSchema)tileSource.Schema).Layer);
+            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, name);
             return cacheDirectory;
         }
 

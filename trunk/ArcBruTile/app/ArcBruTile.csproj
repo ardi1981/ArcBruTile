@@ -157,6 +157,9 @@
       <DependentUpon>ArcBruTileInstaller.cs</DependentUpon>
     </Compile>
     <Compile Include="commands\AboutPdokCommand.cs" />
+    <Compile Include="commands\AddBingHybridLayerCommand.cs" />
+    <Compile Include="commands\AddBingAerialLayerCommand.cs" />
+    <Compile Include="commands\AddBingRoadsLayerCommand.cs" />
     <Compile Include="commands\AddGaodeSatelliteLayerCommand.cs" />
     <Compile Include="commands\AddGaodeStreetsLayerCommand.cs" />
     <Compile Include="commands\AddKosmosnimkiStreetsLayerCommand.cs" />
