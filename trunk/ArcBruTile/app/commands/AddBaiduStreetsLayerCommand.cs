@@ -41,13 +41,6 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            const string url = "https://bertt.github.io/wmts/capabilities/baidu.xml";
-            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Baidu streets", "baidu-streets");
-            var mxdoc = (IMxDocument)_application.Document;
-            var map = mxdoc.FocusMap;
-            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
-
-            /**
             var url = "http://online{s}.map.bdimg.com/tile/?qt=tile&styles=sl&x={x}&y={y}&z={z}";
             var baiduconfig = new BaiduConfig("Baidu", url);
 
@@ -68,8 +61,6 @@ namespace BrutileArcGIS.commands
             brutileLayer.Extent = env;
 
             ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
-            */
-
         }
     }
 }

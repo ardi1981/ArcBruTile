@@ -16,7 +16,7 @@ namespace BrutileArcGIS.lib
                     Id = i.ToString(),
                     UnitsPerPixel = resolutions[i]
                 };
-                Resolutions[res.Id] = new Resolution { Id = res.Id, UnitsPerPixel = res.UnitsPerPixel };
+                Resolutions[res.Id] = new Resolution (res.Id, res.UnitsPerPixel );
             }
             //Height = 256;
             //Width = 256;
@@ -25,7 +25,7 @@ namespace BrutileArcGIS.lib
             OriginY = 0;
             Format = "png";
             Name = "BAIDU";
-            YAxis = YAxis.OSM;
+            YAxis = YAxis.TMS;
             Srs = "EPSG:3857";
         }
     }

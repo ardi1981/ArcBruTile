@@ -15,7 +15,7 @@ namespace BrutileArcGIS.lib
             foreach (var resolution in resolutions)
             {
                 var levelId = count.ToString(CultureInfo.InvariantCulture);
-                Resolutions[levelId] = new Resolution { Id = levelId, UnitsPerPixel = resolution };
+                Resolutions[levelId] = new Resolution (levelId, resolution );
                 count++;
             }
             //Height = 256;
@@ -24,7 +24,7 @@ namespace BrutileArcGIS.lib
             OriginY = 1192896;
             Extent = new Extent(90112, 1192896, 1990673, 2761664);
             Format = "png";
-            YAxis = YAxis.OSM;
+            YAxis = YAxis.TMS;
             Srs = "EPSG:5179";
         }
     }
