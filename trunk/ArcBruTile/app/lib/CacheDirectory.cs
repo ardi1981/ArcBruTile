@@ -4,11 +4,14 @@ using BrutileArcGIS.Lib;
 using System.IO;
 using BruTile;
 using BruTile.Wmts;
+using log4net;
 
 namespace BrutileArcGIS.lib
 {
     public class CacheDirectory
     {
+        private static readonly ILog Logger = LogManager.GetLogger("ArcBruTileSystemLogger");
+
         // used by wmts
         public static FileCache GetFileCache(string baseCacheDir, ITileSource tileSource, EnumBruTileLayer enumBruTileLayer)
         {
@@ -16,13 +19,13 @@ namespace BrutileArcGIS.lib
 
             var cacheDirType = GetCacheDirectory(tileSource, enumBruTileLayer, baseCacheDir);
 
+            Logger.Debug("Cache directory: " + cacheDirType);
+
             // todo: support other image formats as well...
             var fileCache = new FileCache(cacheDirType,tileSource.Schema.Format);
 
             return fileCache;
         }
-
-
 
         public static FileCache GetFileCache(string baseCacheDir, IConfig config, EnumBruTileLayer enumBruTileLayer)
         {
