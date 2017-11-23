@@ -70,12 +70,12 @@
             this.groupBox3.Controls.Add(this.rdbActivityTypeRun);
             this.groupBox3.Controls.Add(this.rdbActivityTypeRide);
             this.groupBox3.Controls.Add(this.rdbActivityTypeAll);
-            this.groupBox3.Location = new System.Drawing.Point(23, 108);
+            this.groupBox3.Location = new System.Drawing.Point(17, 45);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(579, 60);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Activity type::";
+            this.groupBox3.Text = "Activity type";
             // 
             // rdbActivityTypeWinter
             // 
@@ -145,17 +145,17 @@
             this.groupBox1.Controls.Add(this.rdbColorGray);
             this.groupBox1.Controls.Add(this.rdbColorBlue);
             this.groupBox1.Controls.Add(this.rdbColorHot);
-            this.groupBox1.Location = new System.Drawing.Point(23, 42);
+            this.groupBox1.Location = new System.Drawing.Point(17, 111);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(579, 60);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Color:";
+            this.groupBox1.Text = "Color";
             // 
             // rdbColorRed
             // 
             this.rdbColorRed.AutoSize = true;
-            this.rdbColorRed.Location = new System.Drawing.Point(261, 20);
+            this.rdbColorRed.Location = new System.Drawing.Point(248, 20);
             this.rdbColorRed.Name = "rdbColorRed";
             this.rdbColorRed.Size = new System.Drawing.Size(50, 21);
             this.rdbColorRed.TabIndex = 9;
@@ -179,7 +179,7 @@
             // rdbColorBlue
             // 
             this.rdbColorBlue.AutoSize = true;
-            this.rdbColorBlue.Location = new System.Drawing.Point(97, 21);
+            this.rdbColorBlue.Location = new System.Drawing.Point(94, 20);
             this.rdbColorBlue.Name = "rdbColorBlue";
             this.rdbColorBlue.Size = new System.Drawing.Size(56, 21);
             this.rdbColorBlue.TabIndex = 7;
