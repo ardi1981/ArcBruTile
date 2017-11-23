@@ -119,7 +119,7 @@ namespace BrutileArcGIS.lib
             var parameters = (object[])tile;
             var tileInfo = (TileInfo)parameters[0];
             var doneEvent = (MultipleThreadResetEvent)parameters[1];
-            var url = ((WebTileProvider)_tileSource.Provider).Request.GetUri(tileInfo);
+            var url = ((HttpTileProvider)_tileSource.Provider).Request.GetUri(tileInfo);
             // todo: 
             var handler = new HttpClientHandler()
             {

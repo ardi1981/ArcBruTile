@@ -23,7 +23,7 @@ namespace BrutileArcGIS.lib
         {
             var tileSchema = new GlobalSphericalMercator();
             var tileLayerRequest = new BasicRequest(_url, Domains);
-            var tileProvider = new WebTileProvider(tileLayerRequest);
+            var tileProvider = new HttpTileProvider(tileLayerRequest);
             var tileSource = new TileSource(tileProvider, tileSchema);
             return tileSource;
         }

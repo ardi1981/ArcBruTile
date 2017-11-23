@@ -26,7 +26,7 @@ namespace BrutileArcGIS.commands
     public sealed class AddStravaBothLayerCommand : AddTmsLayerCommandBase
     {
         public AddStravaBothLayerCommand()
-            : base("BruTile", "&Running and cycling", "Add Strava Running and cycling Layer", "Strava running and cycling heatmap", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-both.xml", EnumBruTileLayer.InvertedTMS)
+            : base("BruTile", "&Strava 2016", "Add Strava 2016 Running and cycling Layer", "Strava 2016 running and cycling heatmap", Resources.download, "https://raw.githubusercontent.com/ArcBruTile/ArcBruTile/master/configuration/Services/Strava/strava-both.xml", EnumBruTileLayer.InvertedTMS)
         {
         }
     }

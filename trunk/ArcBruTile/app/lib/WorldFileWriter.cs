@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.IO;
 using BruTile;
+using System.Linq;
 
 namespace BrutileArcGIS.lib
 {
@@ -43,8 +44,8 @@ namespace BrutileArcGIS.lib
         {
             using (var sw = new StreamWriter(f))
             {
-                var resX = (extent.MaxX - extent.MinX) / schema.GetTileWidth("0");
-                var resY = (extent.MaxY - extent.MinY) / schema.GetTileHeight("0");
+                var resX = (extent.MaxX - extent.MinX) / schema.Resolutions.First().Value.TileWidth;
+                var resY = (extent.MaxY - extent.MinY) / schema.Resolutions.First().Value.TileHeight;
                 sw.WriteLine(resX.ToString(CultureInfo.InvariantCulture));
                 sw.WriteLine("0");
                 sw.WriteLine("0");

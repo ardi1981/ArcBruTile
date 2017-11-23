@@ -39,20 +39,11 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            var url = "https://vec{s}.maps.yandex.net/tiles?l=skl&v=4.84.0&x={x}&y={y}&z={z}";
-
-            var yandexConfig = new YandexConfig("map", url);
-
-            var layerType = EnumBruTileLayer.InvertedTMS;
+            const string url = "https://bertt.github.io/wmts/capabilities/yandex.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Yandex hybrid", "yandex-labels");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
-
-            var brutileLayer = new BruTileLayer(_application, yandexConfig, layerType)
-            {
-                Name = "Yandex - Hybrid",
-                Visible = true
-            };
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
+            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
         }
 
     }

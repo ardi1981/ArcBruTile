@@ -3,11 +3,15 @@ using BruTile.Cache;
 using BrutileArcGIS.Lib;
 using System.IO;
 using BruTile;
+using BruTile.Wmts;
+using log4net;
 
 namespace BrutileArcGIS.lib
 {
     public class CacheDirectory
     {
+        private static readonly ILog Logger = LogManager.GetLogger("ArcBruTileSystemLogger");
+
         // used by wmts
         public static FileCache GetFileCache(string baseCacheDir, ITileSource tileSource, EnumBruTileLayer enumBruTileLayer)
         {
@@ -15,13 +19,13 @@ namespace BrutileArcGIS.lib
 
             var cacheDirType = GetCacheDirectory(tileSource, enumBruTileLayer, baseCacheDir);
 
+            Logger.Debug("Cache directory: " + cacheDirType);
+
             // todo: support other image formats as well...
             var fileCache = new FileCache(cacheDirType,tileSource.Schema.Format);
 
             return fileCache;
         }
-
-
 
         public static FileCache GetFileCache(string baseCacheDir, IConfig config, EnumBruTileLayer enumBruTileLayer)
         {
@@ -48,7 +52,8 @@ namespace BrutileArcGIS.lib
         // for wmts
         private static string GetCacheDirectory(ITileSource tileSource, EnumBruTileLayer layerType, string baseCacheDir)
         {
-            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, tileSource.Title);
+            var name = (tileSource is BruTile.Web.HttpTileSource ? tileSource.Name : ((WmtsTileSchema)tileSource.Schema).Layer);
+            string cacheDirectory = string.Format("{0}{1}{2}{3}{4}", baseCacheDir, Path.DirectorySeparatorChar, layerType, Path.DirectorySeparatorChar, name);
             return cacheDirectory;
         }
 
@@ -82,16 +87,6 @@ namespace BrutileArcGIS.lib
                     else if (config is BaiduConfig)
                     {
                         url = ((BaiduConfig)config).Url;
-                        url = url.Replace("?", "");
-                    }
-                    else if (config is NokiaConfig)
-                    {
-                        url = ((NokiaConfig)config).Url;
-                        url = url.Replace("?", "");
-                    }
-                    else if (config is YandexConfig)
-                    {
-                        url = ((YandexConfig)config).Url;
                         url = url.Replace("?", "");
                     }
                     else if (config is TileLayerConfig)

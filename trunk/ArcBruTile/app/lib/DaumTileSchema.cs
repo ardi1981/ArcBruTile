@@ -16,16 +16,16 @@ namespace BrutileArcGIS.lib
             foreach (var resolution in resolutions)
             {
                 var levelId = count.ToString(CultureInfo.InvariantCulture);
-                Resolutions[levelId] = new Resolution { Id = levelId, UnitsPerPixel = resolution };
+                Resolutions[levelId] = new Resolution (levelId, resolution );
                 count++;
             }
-            Height = 256;
-            Width = 256;
+            //Height = 256;
+            //Width = 256;
             OriginX = -30000;
             OriginY = -60000;
             Extent = new Extent(-30000, -60000, 694288, 1277010);
             Format = "png";
-            Axis = AxisDirection.Normal;
+            YAxis = YAxis.TMS;
             Srs = "EPSG:5181";
         }
 

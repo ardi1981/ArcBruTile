@@ -52,7 +52,8 @@ namespace BrutileArcGIS.commands
             try
             {
                 const string url = "https://bertt.github.io/wmts/capabilities/thunderforest.xml";
-                var wmtsLayer = WmtsHelper.GetWmtsLayerArcGIS(url, "OpenCycleMap", "thunderforest-opencyclemap");
+                var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenCycleMap", "thunderforest-opencyclemap");
+
                 var mxdoc = (IMxDocument)_application.Document;
                 var map = mxdoc.FocusMap;
                 ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);

@@ -19,7 +19,7 @@ namespace BrutileArcGIS.Lib
 
             if (_osmMapType == OsmMapType.Default)
             {
-                result= new OsmTileSource();
+                result= new TileSource();
             }
 
             return result;

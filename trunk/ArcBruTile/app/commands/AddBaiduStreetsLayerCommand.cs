@@ -61,7 +61,6 @@ namespace BrutileArcGIS.commands
             brutileLayer.Extent = env;
 
             ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
-
         }
     }
 }

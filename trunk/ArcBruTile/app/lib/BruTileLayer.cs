@@ -60,10 +60,6 @@ namespace BrutileArcGIS.Lib
         // used by bing initializer
         public BruTileLayer(IApplication application, EnumBruTileLayer enumBruTileLayer)
         {
-            //var config = ConfigurationHelper.GetConfig();
-            //var bingToken=config.AppSettings.Settings["BingToken"].Value;
-            // var bingUrl = config.AppSettings.Settings["BingUrl"].Value;
-
             ShowTips = false;
             Name = "BruTile";
             Cached = false;
@@ -257,6 +253,13 @@ namespace BrutileArcGIS.Lib
         {
             get { return _enumBruTileLayer; }
             set { _enumBruTileLayer = value; }
+        }
+
+        public ITileSource TileSource
+        {
+            get { return _tileSource; }
+            set { _tileSource=value; }
+
         }
 
         public double MaximumScale { get; set; }

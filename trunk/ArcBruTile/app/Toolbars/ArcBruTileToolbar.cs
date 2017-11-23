@@ -27,14 +27,17 @@ namespace BrutileArcGIS.Toolbars
             //Status sectie
             BeginGroup();
             BeginGroup();
-            AddItem(typeof(OsmMenuDef));
-            AddItem(typeof(ThunderforestMenuDef));
+            AddItem(typeof(AppleMenuDef));
             AddItem(typeof(BingMenuDef));
-            AddItem(typeof(StamenMenuDef));
-            AddItem(typeof(MapBoxMenuDef));
             AddItem(typeof(CartoDBMenuDef));
+            AddItem(typeof(KosmosnimkiMenuDef));
+            AddItem(typeof(MapBoxMenuDef));
+            AddItem(typeof(MichelinMenuDef));
             AddItem(typeof(NokiaMenuDef));
+            AddItem(typeof(OsmMenuDef));
+            AddItem(typeof(StamenMenuDef));
             AddItem(typeof(StravaMenuDef));
+            AddItem(typeof(ThunderforestMenuDef));
             AddItem(typeof(TomTomMenuDef));
             AddItem(typeof(YandexMenuDef));
         }

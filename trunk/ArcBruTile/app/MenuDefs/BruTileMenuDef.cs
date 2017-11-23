@@ -6,7 +6,7 @@ namespace BrutileArcGIS.MenuDefs
     {
         public string Caption
         {
-            get { return "&ArcBruTile 0.9.1"; }
+            get { return "&ArcBruTile 1.0"; }
         }
 
         public void GetItemInfo(int pos, IItemDef itemDef)
@@ -17,19 +17,15 @@ namespace BrutileArcGIS.MenuDefs
                     itemDef.ID = "AddServicesCommand";
                     itemDef.Group = false;
                     break;
+                //case 1:
+                //    itemDef.ID = "AddTileLayerCommand";
+                //    itemDef.Group = false;
+                //    break;
                 case 1:
-                    itemDef.ID = "AddTileLayerCommand";
-                    itemDef.Group = false;
-                    break;
-                case 2:
                     itemDef.ID = "AddGisCloudMapCommand";
                     itemDef.Group = false;
                     break;
-                case 3:
-                    itemDef.ID = "VectorTileLayerCommand";
-                    itemDef.Group = false;
-                    break;
-                case 4:
+                case 2:
                     itemDef.ID = "AboutBruTileCommand";
                     itemDef.Group = true;
                     break;
@@ -39,7 +35,7 @@ namespace BrutileArcGIS.MenuDefs
 
         public int ItemCount
         {
-            get { return 5; }
+            get { return 3; }
         }
 
         public string Name

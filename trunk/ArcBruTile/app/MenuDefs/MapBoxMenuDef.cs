@@ -13,59 +13,59 @@ namespace BrutileArcGIS.MenuDefs
             switch (pos)
             {
                 case 0:
-                    itemDef.ID = "AddMapBoxSatelliteLayerCommand";
-                    itemDef.Group = false;
-                    break;
-                case 1:
-                    itemDef.ID = "AddMapBoxStreetsLayerCommand";
-                    itemDef.Group = false;
-                    break;
-                case 2:
-                    itemDef.ID = "AddMapBoxLightCommand";
-                    itemDef.Group = false;
-                    break;
-                case 3:
                     itemDef.ID = "AddMapBoxDarkCommand";
                     itemDef.Group = false;
                     break;
-                case 4:
-                    itemDef.ID = "AddMapBoxStreetsSatelliteCommand";
+                case 1:
+                    itemDef.ID = "AddMapBoxLightCommand";
                     itemDef.Group = false;
                     break;
-                case 5:
-                    itemDef.ID = "AddMapBoxWheatpasteCommand";
-                    itemDef.Group = false;
-                    break;
-                case 6:
-                    itemDef.ID = "AddMapBoxStreetsBasicCommand";
-                    itemDef.Group = false;
-                    break;
-                case 7:
+                case 2:
                     itemDef.ID = "AddMapBoxComicCommand";
                     itemDef.Group = false;
                     break;
-                case 8:
-                    itemDef.ID = "AddMapBoxOutdoorsCommand";
-                    itemDef.Group = false;
-                    break;
-                case 9:
-                    itemDef.ID = "AddMapBoxRunBikeHikeCommand";
-                    itemDef.Group = false;
-                    break;
-                case 10:
-                    itemDef.ID = "AddMapBoxPencilCommand";
-                    itemDef.Group = false;
-                    break;
-                case 11:
-                    itemDef.ID = "AddMapBoxPiratesCommand";
-                    itemDef.Group = false;
-                    break;
-                case 12:
+                case 3:
                     itemDef.ID = "AddMapBoxEmeraldCommand";
                     itemDef.Group = false;
                     break;
-                case 13:
+                case 4:
                     itemDef.ID = "AddMapBoxHighContrastCommand";
+                    itemDef.Group = false;
+                    break;
+                case 5:
+                    itemDef.ID = "AddMapBoxOutdoorsCommand";
+                    itemDef.Group = false;
+                    break;
+                case 6:
+                    itemDef.ID = "AddMapBoxPencilCommand";
+                    itemDef.Group = false;
+                    break;
+                case 7:
+                    itemDef.ID = "AddMapBoxPiratesCommand";
+                    itemDef.Group = false;
+                    break;
+                case 8:
+                    itemDef.ID = "AddMapBoxRunBikeHikeCommand";
+                    itemDef.Group = false;
+                    break;
+                case 9:
+                    itemDef.ID = "AddMapBoxSatelliteLayerCommand";
+                    itemDef.Group = false;
+                    break;
+                case 10:
+                    itemDef.ID = "AddMapBoxStreetsBasicCommand";
+                    itemDef.Group = false;
+                    break;
+                case 11:
+                    itemDef.ID = "AddMapBoxStreetsLayerCommand";
+                    itemDef.Group = false;
+                    break;
+                case 12:
+                    itemDef.ID = "AddMapBoxStreetsSatelliteCommand";
+                    itemDef.Group = false;
+                    break;
+                case 13:
+                    itemDef.ID = "AddMapBoxWheatpasteCommand";
                     itemDef.Group = false;
                     break;
             }

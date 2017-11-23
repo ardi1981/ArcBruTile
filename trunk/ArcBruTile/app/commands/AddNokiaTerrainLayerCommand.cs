@@ -39,21 +39,12 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            var url =
-                "http://{s}.maps.nlp.nokia.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/256/png?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g";
-
-            var nokiaConfig = new NokiaConfig("Terrain", url);
-
-            var layerType = EnumBruTileLayer.InvertedTMS;
+            const string url = "https://bertt.github.io/wmts/capabilities/nokia.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Nokia terrain", "nokia-terrain");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
+            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
 
-            var brutileLayer = new BruTileLayer(_application, nokiaConfig, layerType)
-            {
-                Name = "Nokia HERE - Terrain",
-                Visible = true
-            };
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
         }
     }
 }

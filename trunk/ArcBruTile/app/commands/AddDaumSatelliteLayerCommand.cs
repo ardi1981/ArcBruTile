@@ -49,7 +49,7 @@ namespace BrutileArcGIS.commands
 
             var brutileLayer = new BruTileLayer(_application, daumConfig, layerType)
             {
-                Name = "Satellite",
+                Name = "Daum Satellite",
                 Visible = true
             };
             ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);

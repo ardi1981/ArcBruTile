@@ -171,7 +171,7 @@ namespace BrutileArcGIS.Lib
 
         public IList<TileInfo> GetTilesWanted(ITileSchema schema, Extent extent, string levelId)
         {
-            return schema.GetTilesInView(extent, (levelId)).ToList();
+            return schema.GetTileInfos(extent, (levelId)).ToList();
         }
 
     }

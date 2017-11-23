@@ -40,7 +40,6 @@ namespace BrutileArcGIS.commands
         public override void OnClick()
         {
             const string url = "https://bertt.github.io/wmts/capabilities/osm.xml";
-            // var wmtsLayer = WmtsHelper.GetWmtsLayerArcGIS(url, "OpenStreetMap Mapnik", "osm-mapnik");
             var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "OpenStreetMap Mapnik", "osm-mapnik");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;

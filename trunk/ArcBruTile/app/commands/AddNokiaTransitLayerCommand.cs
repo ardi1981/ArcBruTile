@@ -39,21 +39,11 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            var url =
-                "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day.transit/{z}/{x}/{y}/512/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g";
-
-            var nokiaConfig = new NokiaConfig("Traffic", url);
-
-            var layerType = EnumBruTileLayer.InvertedTMS;
+            const string url = "https://bertt.github.io/wmts/capabilities/nokia.xml";
+            var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, "Nokia transit", "nokia-transit");
             var mxdoc = (IMxDocument)_application.Document;
             var map = mxdoc.FocusMap;
-
-            var brutileLayer = new BruTileLayer(_application, nokiaConfig, layerType)
-            {
-                Name = "Nokia HERE - Traffic",
-                Visible = true
-            };
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
+            ((IMapLayers)map).InsertLayer(wmtsLayer, true, 0);
         }
     }
 }

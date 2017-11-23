@@ -4,11 +4,6 @@ using BrutileArcGIS.Lib;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
 using ESRI.ArcGIS.Framework;
-using BruTile.Wmts;
-using System.Net.Http;
-using System.Linq;
-using ESRI.ArcGIS.Carto;
-using BrutileArcGIS.lib;
 
 namespace BrutileArcGIS.commands
 {
@@ -42,16 +37,8 @@ namespace BrutileArcGIS.commands
 
         public override void OnClick()
         {
-            //var bruTileAboutBox = new BruTileAboutBox();
-            //bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
-            var mxdoc = (IMxDocument)_application.Document;
-            var map = mxdoc.FocusMap;
-            // what to do: BruTile way
-            var brutileLayer = WmtsHelper.GetWmtsLayer(_application, "png", "https://bertt.github.io/wmts/capabilities/michelin.xml", "Michelin", "michelin-streets");
-            // or ArcGIS?
-            // var brutileLayer = WmtsHelper.GetWmtsLayerArcGIS("https://bertt.github.io/wmts/capabilities/michelin.xml", "Michelin", "michelin-streets");
-
-            ((IMapLayers)map).InsertLayer(brutileLayer, true, 0);
+            var bruTileAboutBox = new BruTileAboutBox();
+            bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
         }
 
     }
