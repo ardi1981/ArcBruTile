@@ -2,7 +2,7 @@
 
 # 5/10/2017: Download ArcBruTile Pro 1.0 for ArcGIS Pro 2.0 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). Now for only 49.99 €EUR.
 
-# 16/9/2017: Download ArcBruTile 0.9 for ArcMap 10.0 -10.5 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 9.99 €EUR.
+# 16/9/2017: Download ArcBruTile 1.0 for ArcMap 10.0 -10.5 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 15 €EUR.
 
 **Project Description**  
 
