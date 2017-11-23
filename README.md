@@ -14,6 +14,15 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+23-11-2017: Release 1.0 
+
+- Upgrade BruTile 0.8.6 -> 0.22.1
+
+- Improved performance + stability
+
+- Support for Strava Heatmaps 2017 (with options activity type and color)
+
+- New Maps: Apple, Kosmosnimki, Michelin, ThunderForest, Gaode)
 
 23-05-2017: Added New York City Maps
 
