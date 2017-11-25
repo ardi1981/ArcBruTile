@@ -58,7 +58,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(617, 193);
+            this.groupBox2.Size = new System.Drawing.Size(424, 159);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add Strava Map:";
@@ -70,9 +70,9 @@
             this.groupBox3.Controls.Add(this.rdbActivityTypeRun);
             this.groupBox3.Controls.Add(this.rdbActivityTypeRide);
             this.groupBox3.Controls.Add(this.rdbActivityTypeAll);
-            this.groupBox3.Location = new System.Drawing.Point(17, 45);
+            this.groupBox3.Location = new System.Drawing.Point(17, 22);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(579, 60);
+            this.groupBox3.Size = new System.Drawing.Size(394, 60);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Activity type";
@@ -80,7 +80,7 @@
             // rdbActivityTypeWinter
             // 
             this.rdbActivityTypeWinter.AutoSize = true;
-            this.rdbActivityTypeWinter.Location = new System.Drawing.Point(330, 21);
+            this.rdbActivityTypeWinter.Location = new System.Drawing.Point(304, 21);
             this.rdbActivityTypeWinter.Name = "rdbActivityTypeWinter";
             this.rdbActivityTypeWinter.Size = new System.Drawing.Size(66, 21);
             this.rdbActivityTypeWinter.TabIndex = 10;
@@ -92,7 +92,7 @@
             // rdbActivityTypeWater
             // 
             this.rdbActivityTypeWater.AutoSize = true;
-            this.rdbActivityTypeWater.Location = new System.Drawing.Point(248, 20);
+            this.rdbActivityTypeWater.Location = new System.Drawing.Point(235, 21);
             this.rdbActivityTypeWater.Name = "rdbActivityTypeWater";
             this.rdbActivityTypeWater.Size = new System.Drawing.Size(63, 21);
             this.rdbActivityTypeWater.TabIndex = 9;
@@ -104,7 +104,7 @@
             // rdbActivityTypeRun
             // 
             this.rdbActivityTypeRun.AutoSize = true;
-            this.rdbActivityTypeRun.Location = new System.Drawing.Point(180, 21);
+            this.rdbActivityTypeRun.Location = new System.Drawing.Point(163, 21);
             this.rdbActivityTypeRun.Name = "rdbActivityTypeRun";
             this.rdbActivityTypeRun.Size = new System.Drawing.Size(50, 21);
             this.rdbActivityTypeRun.TabIndex = 8;
@@ -145,9 +145,9 @@
             this.groupBox1.Controls.Add(this.rdbColorGray);
             this.groupBox1.Controls.Add(this.rdbColorBlue);
             this.groupBox1.Controls.Add(this.rdbColorHot);
-            this.groupBox1.Location = new System.Drawing.Point(17, 111);
+            this.groupBox1.Location = new System.Drawing.Point(17, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(579, 60);
+            this.groupBox1.Size = new System.Drawing.Size(394, 60);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Color";
@@ -155,11 +155,11 @@
             // rdbColorRed
             // 
             this.rdbColorRed.AutoSize = true;
-            this.rdbColorRed.Location = new System.Drawing.Point(248, 20);
+            this.rdbColorRed.Location = new System.Drawing.Point(235, 21);
             this.rdbColorRed.Name = "rdbColorRed";
             this.rdbColorRed.Size = new System.Drawing.Size(50, 21);
             this.rdbColorRed.TabIndex = 9;
-            this.rdbColorRed.Tag = "red";
+            this.rdbColorRed.Tag = "bluered";
             this.rdbColorRed.Text = "red";
             this.rdbColorRed.UseVisualStyleBackColor = true;
             this.rdbColorRed.CheckedChanged += new System.EventHandler(this.rdbColorChanged);
@@ -167,7 +167,7 @@
             // rdbColorGray
             // 
             this.rdbColorGray.AutoSize = true;
-            this.rdbColorGray.Location = new System.Drawing.Point(180, 21);
+            this.rdbColorGray.Location = new System.Drawing.Point(163, 20);
             this.rdbColorGray.Name = "rdbColorGray";
             this.rdbColorGray.Size = new System.Drawing.Size(57, 21);
             this.rdbColorGray.TabIndex = 8;
@@ -179,7 +179,7 @@
             // rdbColorBlue
             // 
             this.rdbColorBlue.AutoSize = true;
-            this.rdbColorBlue.Location = new System.Drawing.Point(94, 20);
+            this.rdbColorBlue.Location = new System.Drawing.Point(97, 20);
             this.rdbColorBlue.Name = "rdbColorBlue";
             this.rdbColorBlue.Size = new System.Drawing.Size(56, 21);
             this.rdbColorBlue.TabIndex = 7;
@@ -206,7 +206,7 @@
             // 
             this.btnCancel.CausesValidation = false;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(533, 241);
+            this.btnCancel.Location = new System.Drawing.Point(348, 180);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 28);
@@ -217,7 +217,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(380, 241);
+            this.btnOk.Location = new System.Drawing.Point(184, 180);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(145, 28);
@@ -236,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(659, 275);
+            this.ClientSize = new System.Drawing.Size(469, 218);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.groupBox2);
