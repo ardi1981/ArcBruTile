@@ -3,6 +3,6 @@ namespace BrutileArcGIS.lib
 {
     public enum StravaColor
     {
-        hot, bluered, gray, red
+        hot, blue, gray, bluered
     }
 }
