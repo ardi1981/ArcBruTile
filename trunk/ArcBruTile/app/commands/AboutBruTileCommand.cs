@@ -5,6 +5,16 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
 using ESRI.ArcGIS.Framework;
 
+/**
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.DataSourcesRaster;
+using System;
+using ESRI.ArcGIS.Geodatabase;
+using System.Drawing;
+using System.Drawing.Imaging;
+using ESRI.ArcGIS.esriSystem;
+*/
+
 namespace BrutileArcGIS.commands
 {
     [ProgId("AboutBruTileCommand")]
@@ -41,6 +51,16 @@ namespace BrutileArcGIS.commands
             bruTileAboutBox.ShowDialog(new ArcMapWindow(_application));
         }
 
+        /**
+         * use this for testing out custom layers...
+         * public void test()
+        {
+            var mxdoc = (IMxDocument)_application.Document;
+            var map = mxdoc.FocusMap;
+            var d = new DemoCustomLayer(_application, map.SpatialReference);
+            //d.SpatialReference = map.SpatialReference;
+            ((IMapLayers)map).InsertLayer(d, true, 0);
+        }*/
     }
 }
 

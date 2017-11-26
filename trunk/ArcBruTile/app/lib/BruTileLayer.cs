@@ -198,6 +198,7 @@ namespace BrutileArcGIS.Lib
 
                                     var bruTileHelper = new BruTileHelper(_tileTimeOut);
                                     _displayFilter.Transparency = (short)(255 - ((_transparency * 255) / 100));
+                                    _displayFilter.BackgroundRGB = 587202560;
                                     if (display.Filter == null)
                                     {
                                         display.Filter = _displayFilter;

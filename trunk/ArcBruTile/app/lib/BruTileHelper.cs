@@ -189,6 +189,8 @@ namespace BrutileArcGIS.Lib
                     rl.Renderer = rasterRgbRenderer;
                 }
                 // end fix 9/10/2015: with projected tiles color changes and transparency is ignored.
+                // var pBlobStream = new MemoryBlobStreamClass();
+                // rl.Save(new FileStreamClass(), 0);
 
                 rl.Draw(esriDrawPhase.esriDPGeography, _display, null);
             }
@@ -250,30 +252,60 @@ namespace BrutileArcGIS.Lib
             }
             Logger.Debug("Download tile: " + url);
 
-/**            if (_tileSource.Name.Contains("Baidu")){
-                var offset = Math.Pow(2, Int32.Parse(tileInfo.Index.Level)- 1);
-                var new_col = tileInfo.Index.Col - offset;
-                var new_row = offset - tileInfo.Index.Row - 1;
-
-                var newTileIndex = new TileIndex((int)new_col, (int)new_row, tileInfo.Index.Level);
-                tileInfo.Index = newTileIndex;
-                url = _tileProvider.Request.GetUri(tileInfo);
-                Logger.Debug("Download tile baid: " + url);
-
-                // url = $"http://online8.map.bdimg.com/tile/?qt=tile&styles=pl&x={new_col}&y={new_row}&z={TileMatrix}";
-            }
-*/
-
             var bytes = GetBitmap(url);
 
             if (bytes != null)
             {
+                // hacky....
+                if (url.AbsoluteUri.Contains("strava"))
+                {
+                    bytes = DoStravaHack(bytes);
+                }
+
                 var name = _fileCache.GetFileName(tileInfo.Index);
                 _fileCache.Add(tileInfo.Index, bytes);
                 CreateRaster(tileInfo, name);
                 Logger.Debug("Tile retrieved: " + url.AbsoluteUri);
             }
             doneEvent.SetOne();
+        }
+
+        // ArcMap or this implementation doesn't seem to accept transparent pixels (alpha=0) 
+        // with RGB values when there is reprojection going on (with method ProjectFast). The transparency 
+        // gets lost then :-( So as a workaround we remove all RGB information when alpha==0 for all pixels.
+        private static byte[] DoStravaHack(byte[] bytes)
+        {
+            Bitmap image;
+            var c = Color.FromArgb(0, 0, 0, 0);
+
+            using (var ms = new MemoryStream(bytes))
+            {
+                image = new Bitmap(ms);
+                for (int i = 0; i < 256; i++)
+                {
+                    for (int j = 0; j < 256; j++)
+                    {
+                        var p = image.GetPixel(i, j);
+                        if (p.A == 0)
+                        {
+                            image.SetPixel(i, j, c);
+                        }
+                    }
+                }
+            }
+            bytes = ImageToByte2(image);
+            return bytes;
+        }
+
+
+
+        public static byte[] ImageToByte2(Image img)
+        {
+            using (var stream = new MemoryStream())
+            {
+                img.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                return stream.ToArray();
+            }
         }
 
         public static string ReplaceLastOccurrence(string Source, string Find, string Replace)
