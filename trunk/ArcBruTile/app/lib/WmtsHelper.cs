@@ -3,6 +3,7 @@ using BruTile.Wmts;
 using BrutileArcGIS.Lib;
 using ESRI.ArcGIS.Framework;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 
 namespace BrutileArcGIS.lib
@@ -22,6 +23,8 @@ namespace BrutileArcGIS.lib
         public static BruTileLayer GetWmtsLayer(IApplication _application, string format, string capabilitiesUrl, string LayerName, string LayerId)
         {
             var httpClient = new HttpClient();
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
+
             var stream = httpClient.GetStreamAsync(capabilitiesUrl).Result;
             var tileSources = WmtsParser.Parse(stream);
             var tileSource = (from a in tileSources where ((WmtsTileSchema)a.Schema).Layer == LayerId select a).FirstOrDefault();

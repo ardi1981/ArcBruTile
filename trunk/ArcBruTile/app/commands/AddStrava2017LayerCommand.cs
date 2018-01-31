@@ -57,7 +57,7 @@ namespace BrutileArcGIS.commands
 
         private void AddStravaLayer(StravaColor stravaColor, StravaActivityType stravaActivityType)
         {
-            const string url = "https://bertt.github.io/wmts/capabilities/strava2017.xml";
+            const string url = "http://bertt.github.io/wmts/capabilities/strava2017.xml";
             var wmtsLayer = WmtsHelper.GetWmtsLayer(_application, "png", url, $"Strava 2017 - {stravaActivityType.ToString()}", "strava-riding");
             var prov = (HttpTileProvider)wmtsLayer.TileSource.Provider;
 

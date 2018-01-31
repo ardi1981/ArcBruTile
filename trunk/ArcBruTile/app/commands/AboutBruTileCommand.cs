@@ -5,15 +5,6 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ArcMapUI;
 using ESRI.ArcGIS.Framework;
 
-/**
-using ESRI.ArcGIS.Carto;
-using ESRI.ArcGIS.DataSourcesRaster;
-using System;
-using ESRI.ArcGIS.Geodatabase;
-using System.Drawing;
-using System.Drawing.Imaging;
-using ESRI.ArcGIS.esriSystem;
-*/
 
 namespace BrutileArcGIS.commands
 {
