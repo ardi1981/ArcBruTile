@@ -1,12 +1,12 @@
-# 8/10/2017: Download ArcBruTile Pro - China for ArcGIS Pro 2.0 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). Now for only 25.00 €EUR.
+﻿# 8/10/2017: Download ArcBruTile Pro - China for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). Now for only 25 €EUR.
 
-# 5/10/2017: Download ArcBruTile Pro 1.0 for ArcGIS Pro 2.0 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). Now for only 25 €EUR.
+# 5/10/2017: Download ArcBruTile Pro for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). Now for only 25 €EUR.
 
-# 16/9/2017: Download ArcBruTile 1.0 for ArcMap 10.0 -10.5 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 15 €EUR.
+# 16/9/2017: Download ArcBruTile 1.0.2 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 15 €EUR.
 
 **Project Description**  
 
-ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi](http://www.autonavi.com/), [Baidu](http://map.baidu.com/), [Bing](http://www.bing.com/maps/), [CartoDB](https://cartodb.com/), [Daum](http://map.daum.net/), [GIS Cloud](http://www.giscloud.com), [Humanitarian OpenStreetMap (HOT)](https://hotosm.org/), [IsHowChina](http://www.ishowchina.com/), [Klokan Technologies](http://www.klokantech.com/), [Kosmosnimki](http://www.kosmosnimki.ru/), [Mapbox](http://www.mapbox.com), [Nationaal Georegister](http://nationaalgeoregister.nl/) (PDOK), [National Library of Scotland](http://www.nls.uk/) (NLS), [Nokia HERE](https://maps.here.com), [Naver](http://map.naver.com/), [New York City Maps](http://maps.nyc.gov/doitt/nycitymap/), [NZ MapsPast](http://www.mapspast.org.nz/), [OpenStreetMap](http://www.openstreetmap.org/), [OpenRailwayMap](http://www.openrailwaymap.org/), [OpenWeatherMap](http://openweathermap.org/), [OpenSeaMap](http://www.openseamap.org/), [OSM2Vectortiles](http://osm2vectortiles.org/maps/), [Stamen](http://www.stamen.com), [Sputnik](http://maps.sputnik.ru/), [Strava](http://www.strava.com/), [Taobao](https://map.taobao.com/), [Thunderforest](http://www.thunderforest.com/), [Tianditu](http://www.tianditu.cn), [TomTom](http://www.tomtom.com), [VWorld](http://www.vworld.kr), [Yandex](https://yandex.com/maps/) and others in ArcGIS Desktop 10.0/10.1/10.2/10.3/10.4/10.5.
+ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi](http://www.autonavi.com/), [Baidu](http://map.baidu.com/), [Bing](http://www.bing.com/maps/), [CartoDB](https://cartodb.com/), [Daum](http://map.daum.net/), [GIS Cloud](http://www.giscloud.com), [Humanitarian OpenStreetMap (HOT)](https://hotosm.org/), [IsHowChina](http://www.ishowchina.com/), [Klokan Technologies](http://www.klokantech.com/), [Kosmosnimki](http://www.kosmosnimki.ru/), [Mapbox](http://www.mapbox.com), [Nationaal Georegister](http://nationaalgeoregister.nl/) (PDOK), [National Library of Scotland](http://www.nls.uk/) (NLS), [Nokia HERE](https://maps.here.com), [Naver](http://map.naver.com/), [New York City Maps](http://maps.nyc.gov/doitt/nycitymap/), [NZ MapsPast](http://www.mapspast.org.nz/), [OpenStreetMap](http://www.openstreetmap.org/), [OpenRailwayMap](http://www.openrailwaymap.org/), [OpenWeatherMap](http://openweathermap.org/), [OpenSeaMap](http://www.openseamap.org/), [OSM2Vectortiles](http://osm2vectortiles.org/maps/), [Stamen](http://www.stamen.com), [Sputnik](http://maps.sputnik.ru/), [Strava](http://www.strava.com/), [Taobao](https://map.taobao.com/), [Thunderforest](http://www.thunderforest.com/), [Tianditu](http://www.tianditu.cn), [TomTom](http://www.tomtom.com), [VWorld](http://www.vworld.kr), [Yandex](https://yandex.com/maps/) and others in ArcGIS Desktop 10.0/10.1/10.2/10.3/10.4/10.5/10.6.
 
 
 **Slack**
@@ -14,6 +14,10 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+2-2-2018: source code moved to private repository
+
+1-2-2018: Release 1.0.2
+
 23-11-2017: Release 1.0 
 
 - Upgrade BruTile 0.8.6 -> 0.22.1
@@ -72,7 +76,7 @@ See [supported_maps.md](supported_maps.md)
 
 *   all projections;
 *   client side caching;
-*   ArcGIS 10.0, 10.1, 10.2, 10.3, 10.4, 10.5;
+*   ArcGIS 10.0, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6;
 *   Printing; 
 *   MapTiler support (see [ArcBruTile and MapTiler](wikipage?title=ArcBruTile%20and%20MapTiler) for details).
 
@@ -83,19 +87,7 @@ ArcBruTile is based on the generic tiling library [BruTile](http://brutile.codep
 Because ArcGIS, one of the most popular desktop GIS program around, lacks support for non-Esri tile services, especially the increasingly popular [OpenStreetMap](http://www.openstreetmap.org) maps. And because we're bored searching for the always slow or lost or broken disk/service with actual map reference data :-)  
 ArcBruTile also solves the projections problem: all tiles are transformed on the fly to the desired projection if needed. ArcBruTile makes it very easy to combine data with different projections. 
 
-**Getting started for developers**
 
-Prerequisites: Visual Studio + ArcGIS Desktop 10.X is installed
-
-*   git clone https://github.com/ArcBruTile/ArcBruTile.git
-*   cd ArcBruTile\trunk\ArcBruTile
-*   Open ArcBruTile.sln in Visual Studio 2015
-*   Rebuild solution
-*   cd app\bin
-*   Right click on ArcBruTile.dll -> Open with -> Select Esri Registration Assembly Utility -> Register with ArcGIS Desktop
-*   Open project properties of project ArcBruTile -> Debug -> Start action -> Start external program -> Select C:\Program Files (x86)\ArcGIS\Desktop10.3\bin\ArcMap.exe
-*   Press F5 and ArcMap will start in debug mode
- 
 **Testimonials:**
 *   "Quite possibly the best thing since sliced bread for geo-geeks working in an ESRI environment" - (https://www.facebook.com/groups/CRAPGIS/permalink/955867361110256/)
 *   "ArcBruTile is a wonderful extensionfor ArcGIS" - (http://www.mapspast.org.nz/mapnews/0/?thread=ARCGIS%20Integration%20using%20ArcBruTile)
@@ -117,7 +109,7 @@ Prerequisites: Visual Studio + ArcGIS Desktop 10.X is installed
 
 **Future development:**  
 
-Want to add your maps or new functionality to ArcMap? [Contact us](https://www.codeplex.com/site/users/contact/bertt?OriginalUrl=http://www.codeplex.com/site/users/view/bertt)! 
+Want to add your maps or new functionality to ArcMap? [Contact us](https://www.facebook.com/bert.temme?OriginalUrl=https://www.facebook.com/bert.temme)
 
 **References:**
 
