@@ -1,8 +1,8 @@
-﻿# 8/10/2017: Download ArcBruTile Pro - China for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). Now for only 25 €EUR.
+﻿# 8/10/2017: Download ArcBruTile Pro - China for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). 
 
-# 5/10/2017: Download ArcBruTile Pro for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). Now for only 25 €EUR.
+# 5/10/2017: Download ArcBruTile Pro for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). 
 
-# 16/9/2017: Download ArcBruTile 1.0.2 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). Now for only 15 €EUR.
+# 16/9/2017: Download ArcBruTile 1.0.2 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). 
 
 **Project Description**  
 
