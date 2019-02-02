@@ -2,9 +2,9 @@
 
 Air Quality Index:  aqi, pm25, o3, no2, so2, co, asean-pm10. [https://aqicn.org](https://aqicn.org) 
 
-AutoNavi: Satellite [http://www.autonavi.com/]
+AutoNavi: Satellite [http://www.autonavi.com/](http://www.autonavi.com/)
 
-Baidu: Normal, Satellite, Streets [http://map.baidu.com/](http://map.baidu.com/  )
+Baidu: Normal, Satellite, Streets [http://map.baidu.com/](http://map.baidu.com/)
 
 CartoDB: dark, light, dark no labels, light no labels, dark only labels. [https://cartodb.com/](https://cartodb.com/)
 
@@ -24,7 +24,7 @@ MapBox: Streets, Light, Dark, Satellite, Streets - Satellite, Wheatpaste, Stre
 
 Nationaal Georegister (PDOK): AAN, BGT (standaard, lijngericht, achtergrond en omtrekgericht), AHN2, AHN3, BAG, BRT (normaal, grijs, pastel), Kadastrale kaart, Top10 vector, Top50 vector, Top25 raster, Top50 raster and Top250 raster. [https://www.pdok.nl/](https://www.pdok.nl/)
 
-National Library of Scotland (NLS): Historical Maps of Great Britain 
+National Library of Scotland (NLS): Historical Maps of Great Britain [https://maps.nls.uk/](https://maps.nls.uk/)
 
 Naver: Streets, Satellite, Hybrid and Cadastral [http://map.naver.com/](http://map.naver.com/)
 
