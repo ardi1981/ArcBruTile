@@ -14,6 +14,11 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+
+2019-02-09: release ArcBruTile 2.0 and ArcBruTile.Pro 1.3. 
+
+Adding XYZ tile layer support + OpenMapTiles/Waze maps.
+
 2-2-2018: source code moved to private repository
 
 1-2-2018: Release 1.0.2
