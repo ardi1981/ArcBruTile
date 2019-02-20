@@ -2,7 +2,7 @@
 
 # 5/10/2017: Download ArcBruTile Pro for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). 
 
-# 16/9/2017: Download ArcBruTile 1.0.2 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). 
+# 16/9/2017: Download ArcBruTile 3 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). 
 
 **Project Description**  
 
@@ -14,6 +14,8 @@ ArcBruTile displays maps from [Air Quality Index](https://aqicn.org), [AutoNavi
 Get in contact with other ArcBruTile users/developers, go to [http://arcbrutile.slack.com](http://arcbrutile.slack.com)
 
 **News**
+
+2019-02-19: release ArcBruTile 3.0. Uses Add-in architecture + new userinterface (all in one combobox)
 
 2019-02-09: release ArcBruTile 2.0 and ArcBruTile.Pro 1.3. 
 
