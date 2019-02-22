@@ -1,8 +1,12 @@
-﻿# 8/10/2017: Download ArcBruTile Pro - China for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). 
+## Download ArcBruTile 3 for ArcMap 10.2 - 10.6
 
-# 5/10/2017: Download ArcBruTile Pro for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro](https://bertt.itch.io/arcbrutile-pro). 
+<a href= "https://bertt.itch.io/arcbrutile"><img src="ArcBruTile_itch.io.png"/></a>
 
-# 16/9/2017: Download ArcBruTile 3 for ArcMap 10.0 - 10.6 at [https://bertt.itch.io/arcbrutile](https://bertt.itch.io/arcbrutile). 
+## Download ArcBruTile Pro for ArcGIS Pro 2.1 - 2.3
+
+<a href= "https://bertt.itch.io/arcbrutile-pro"><img src="ArcBruTile_Pro_itch.io.png"/></a>
+
+## Download ArcBruTile Pro - China for ArcGIS Pro 2.1 at [https://bertt.itch.io/arcbrutile-pro-china](https://bertt.itch.io/arcbrutile-pro-china). 
 
 **Project Description**  
 
